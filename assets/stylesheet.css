@@ -1,0 +1,59 @@
+
+@font-face{
+	font-family:'Fjalla One';
+	font-display:swap;
+	src:url('{{ site.baseurl }}/assets/fonts/Fjalla One/Fjalla_One-Regular.ttf');
+	font-weight: 400;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('{{ site.baseurl }}/assets/fonts/Karla/Karla-Regular.ttf');
+	font-weight: 400;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('{{ site.baseurl }}/assets/fonts/Karla/Karla-Bold.ttf');
+	font-weight: 700;
+}
+.green {
+    color:#D8FF00;
+}
+
+.button {
+    font-family: 'Fjalla One';
+    font-size: 25px;
+    padding:.5vw;
+}
+
+.red {
+    background-color: #EF2218;
+    color: #fff;
+    width: 201px;
+    border-radius: 6px;
+}
+
+.white {
+    background-color: #FFFFFF;
+    color: #000;
+    border-radius: 6px;
+}
+
+p {
+    font-family: 'Karla';
+    font-size: 20px;
+}
+
+h1, .subtitle {
+    font-family: 'Karla';
+}
+
+h2, .title {
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
+}
+
+.section-one {
+    background-image: url('{{ site.baseurl }}/assets/images/section-one-bg.jpg');
+}

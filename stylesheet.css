@@ -1,0 +1,64 @@
+
+@font-face{
+	font-family:'Fjalla One';
+	font-display:swap;
+	src:url('/applications/websites/koi/assets/fonts/Fjalla One/Fjalla_One-Regular.ttf');
+	font-weight: 400;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('/applications/websites/koi/assets/fonts/Karla/Karla-Regular.ttf');
+	font-weight: 400;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('/Applications/websites/koi/assets/fonts/Karla/Karla-Regular.ttf');
+	font-weight: 700;
+}
+.green {
+    color:#D8FF00;
+}
+
+.button {
+    font-family: 'Fjalla One';
+    font-size: 25px;
+    padding:.5vw;
+}
+
+.red {
+    background-color: #EF2218;
+    color: #fff;
+    width: 201px;
+    border-radius: 6px;
+}
+
+.white {
+    background-color: #FFFFFF;
+    color: #000;
+    border-radius: 6px;
+}
+
+p {
+    font-family: 'Karla';
+    font-size: 20px;
+}
+
+h1, .subtitle {
+    font-family: 'Karla';
+}
+
+h2, .title {
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
+}
+
+.top-bar{background:black;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 4vw}
+.top-bar a {color:#fff;text-decoration:none}
+.top-bar a.green {text-decoration: underline; font-weight: 700;}
+
+
+.section-one {
+    background-image: url('/applications/websites/koi/assets/images/section-one-bg.jpg');
+}
