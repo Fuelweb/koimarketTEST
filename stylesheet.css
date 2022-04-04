@@ -1,21 +1,31 @@
 
+body {
+    margin:0;
+    background-color: #000;
+}
 @font-face{
 	font-family:'Fjalla One';
 	font-display:swap;
-	src:url('/applications/websites/koi/assets/fonts/Fjalla One/Fjalla_One-Regular.ttf');
+	src:url('assets/fonts/Fjalla_One/FjallaOne-Regular.ttf');
 	font-weight: 400;
 }
 @font-face{
 	font-family:'Karla';
 	font-display:swap;
-	src:url('/applications/websites/koi/assets/fonts/Karla/Karla-Regular.ttf');
+	src:url('assets/fonts/Karla/Static/Karla-Regular.ttf');
 	font-weight: 400;
 }
 @font-face{
 	font-family:'Karla';
 	font-display:swap;
-	src:url('/Applications/websites/koi/assets/fonts/Karla/Karla-Regular.ttf');
+	src:url('assets/fonts/Karla/Static/Karla-Bold.ttf');
 	font-weight: 700;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('assets/fonts/Karla/Static/Karla-Medium.ttf');
+	font-weight: 500;
 }
 .green {
     color:#D8FF00;
@@ -23,14 +33,26 @@
 
 .button {
     font-family: 'Fjalla One';
-    font-size: 25px;
-    padding:.5vw;
+    font-size: 1.2vw;
+    padding: .7vw 1.8vw;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .red {
     background-color: #EF2218;
     color: #fff;
-    width: 201px;
+    border-radius: 6px;
+}
+
+.red svg {
+    position: relative;
+    left: .8vw;
+}
+
+.aqua {
+    background-color: #00ABB8;
+    color: #fff;
     border-radius: 6px;
 }
 
@@ -39,26 +61,590 @@
     color: #000;
     border-radius: 6px;
 }
+.clear {
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.clear svg, .button svg {
+    height: 1vw;
+    width: 1vw;
+}
 
 p {
     font-family: 'Karla';
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 h1, .subtitle {
     font-family: 'Karla';
+    text-transform: capitalize;
+    font-size: 2vw;
 }
-
 h2, .title {
     font-family: 'Fjalla One';
     text-transform: uppercase;
+    font-size: 2.7vw;
 }
 
-.top-bar{background:black;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 4vw}
-.top-bar a {color:#fff;text-decoration:none}
-.top-bar a.green {text-decoration: underline; font-weight: 700;}
+.top-bar{
+    background:black;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    padding:.5vw 5vw 0;
+    font-family: 'Karla';
+    height: 2vw;
+    position: relative;
+}
+
+.top-bar a {
+    color:#fff;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+
+.top-bar .left a.green {
+    text-decoration: underline;
+    color:#D8FF00;
+    padding-left: .5vw;
+    font-weight: 500;
+    position: relative;
+    top:-.3vw;
+}
+
+.top-bar svg {
+    padding: 0 .46vw;
+    height:1.2vw;
+    width:1.2vw;
+}
+.top-bar .right svg {
+    height: 1vw;
+    width: 1vw;
+}
+.login {
+    border-left: solid 1px #fff;
+    display: inline-block;
+    height: 2.5vw;
+    top: -.5vw;
+    position: relative;
+    margin-left:.5vw;
+}
+
+.login a {
+    color:#EF2218;
+    text-decoration: underline;
+    font-weight: 500;
+    padding-left: 1vw;
+    top: .4vw;
+    position: relative;
+}
+
+.nav-bar {
+    padding: 1vw 5vw;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    height: 3vw;
+}
+.nav-bar img {
+    height: auto;
+    width: 9vw;
+    display: inline-block;
+}
+
+.nav-bar .links {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10vw;
+    padding-top:1vw;
+}
+
+.nav-bar .links a {
+    font-family: 'Fjalla One';
+    color: #fff;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: 0 .68vw;
+    text-transform: uppercase;
+}
+
+.nav-bar .buttons {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2vw;
+    margin-top:1vw;
+}
+
+.nav-bar .buttons .button {
+    padding: .7vw 1.5vw;
+}
+
+.nav-bar .buttons .button.clear {
+    position: relative;
+    left: 2vw;
+}
+
+
+
+
+
 
 
 .section-one {
-    background-image: url('/applications/websites/koi/assets/images/section-one-bg.jpg');
+    background-image: url('assets/images/section-one-bg.jpg');
+    background-size: 102%;
+    height: 38vw;
+    padding: 7vw 7.6vw 2vw;
+    margin-top:-6vw;
+    overflow: hidden;
+}
+.section-one .green.free-shipping {
+    text-decoration: none;
+    float: right;
+    font-size: 1.36vw;
+    font-family: 'Karla';
+    text-transform: capitalize;
+    letter-spacing: .017vw;
+}
+.section-one .button.white {
+    position: relative;
+    left: 1vw;
+}
+
+.section-one .green.free-shipping svg {
+    height: 1.1vw;
+    width: 1.1vw;
+}
+
+.section-one .koi-image {
+    position: absolute;
+    width: 42vw;
+    height: auto;
+    right: 15vw;
+}
+
+.section-one h1 {
+    color: #fff;
+    font-size: 3vw;
+    font-weight: 400;
+    width: 36vw;
+    line-height: 1.1;
+    padding-top: 2.8vw;
+    letter-spacing: .03vw;
+}
+.section-one h2 {
+    color: #fff;
+    font-size: 7.9vw;
+    margin: -2vw 0 1vw;
+    letter-spacing: -.3vw;
+}
+.section-one .text-aside {
+    color: #fff;
+    width: 23vw;
+    text-align: right;
+    position: relative;
+    margin-left: 17vw;
+    top: 5.5vw;
+}
+.section-one .text-aside p{
+    font-size: 1.3vw;
+    text-transform: capitalize;
+}
+
+.section-one .text-aside .button.red {
+    position: absolute;
+    top: 1vw;
+    padding: .5vw 1vw;
+    right: -5vw;
+}
+.section-one .text-aside .button.red svg{
+    position: relative;
+    vertical-align: middle;
+}
+.section-one .form-container {
+    float: right;
+    position: relative;
+    background: #000000b5;
+    width: 28vw;
+    height: 41vw;
+    margin-top: -22vw;
+    border-radius: 6px;
+}
+.section-one .form-container .top {
+    background-color: #EF2218;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 6px;
+}
+.section-one .form-container .top p{ 
+    font-family: 'Karla';
+    font-size: 1vw;
+    color: #fff;
+}
+.section-one .form-container .top .green {
+    font-size: 2vw;
+    font-family: 'Fjalla One';
+    color: #D8FF00;
+}
+.section-one .form-container .bottom {
+    background-color: #fff;
+}
+
+.section-two {
+    background-color: #000;
+    color: #fff;
+    padding: 3.5vw 5vw 2vw;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+
+.section-two .column {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+.section-two .column svg {
+    display: inline-block;
+    vertical-align: top;
+    height: 3.5vw;
+    width: 3.5vw;
+    position: relative;
+    top: 1vw;
+}
+.section-two .column .text-box {
+    display: inline-block;
+    width: 20vw;
+    padding-left: 1vw;
+}
+.section-two .column:nth-child(2) {
+  padding-left: 7vw;
+}
+.section-two .column .text-box span {
+    text-transform: uppercase;
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+.section-two .column .text-box p{
+    font-size: 1vw;
+    margin-top:0;
+    line-height: 1.7;
+    letter-spacing: .2;
+}
+.section-two .column .text-box svg {
+    height: 1vw;
+    width: 1vw;
+    float: right;
+    top:-1vw;
+}
+
+.section-three {
+    background-color: #70707078;
+    margin: 6vw 6vw 3vw;
+    padding: 1vw 2vw;
+    position: relative;
+    height: 41vw;
+}
+.section-three p {
+    line-height: 1.8;
+}
+
+.section-three .left-column {
+    width: 40vw;
+    padding-right: 2vw;
+    display: inline-block;
+}
+.section-three .left-column .subtitle {
+    margin-bottom:0;
+    margin-top:1vw;
+}
+.section-three .right-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 35vw;
+    margin-top:-4vw;
+}
+.section-three .left-column h2 {
+    width: 34vw;
+    margin: 0;
+    line-height:1.3;
+}
+
+.section-three .left-column .button.red {
+    position: relative;
+    top:4vw;
+}
+.section-three p, h2, .title {
+    color: #fff;
+}
+
+.section-three .right-column img {
+    width: 45vw;
+    height: auto;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.81);
+    border-radius: 6px;
+}
+
+.section-three .right-column .bottom {
+    margin-top: 3vw;
+    margin-left: 4vw;
+}
+.section-three .right-column .bottom p{
+    width:24vw;
+    text-align: right;
+    font-size: 1.3vw;
+    line-height: 1.2;
+}
+.section-three .right-column .bottom img{
+    height: auto;
+    width: 16vw;
+    right: -1.5vw;
+    bottom: 1vw;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    position: absolute;
+}
+.section-three .right-column .bottom .title.green {
+    margin: 0;
+    color:#D8FF00;
+    text-align: center;
+    font-size: 2.8vw;
+}
+
+.section-three .right-column .button.red {
+    position: relative;
+    left:7vw;
+}
+.section-four {
+    text-align: center;
+    position: relative;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 4.4vw;
+}
+.section-four .koi-image {
+    z-index: 0;
+    position: absolute;
+    width: 39vw;
+    height: auto;
+    left: 1vw;
+    top: -15vw;
+}
+.section-four .subtitle {
+    margin-bottom:0;
+}
+.section-four h2 {
+    padding: 0 22vw;
+    margin-top:0;
+}
+.section-four .boxes {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4vw;
+}
+.section-four .boxes .box .title {
+    font-size: 1.9vw;
+    margin-bottom: .5vw;
+    padding-left:1vw;
+}
+.section-four .boxes .box .title::after {
+    border-bottom: 1px solid #fff;
+    width: 90%;
+    text-align: right;
+    content: "";
+    display: block;
+    position: absolute;
+    right:0;
+    margin-top:1vw;
+}
+.section-four .boxes .box .text-box {
+    width: 17vw;
+    line-height: 1.8;
+    position: absolute;
+    right: -19vw;
+    transition: ease .7s;
+    padding: 0 1vw;
+}
+.section-four .boxes .box .text-box .button {
+    color: #EF2218;
+    margin-left: -1.2vw;
+    position: relative;
+}
+
+.section-four .boxes .box:hover .text-box {
+    right: 1vw;
+}
+
+.section-four .boxes .box {
+    position: relative;
+    width: 19vw;
+    height: 22vw;
+    overflow: hidden;
+    padding: 3vw 1vw;
+    margin: 1vw;
+    text-align: left;
+}
+
+.section-four .boxes .box picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.section-four .boxes .box picture img{
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000 0%, rgba(84, 84, 84, 0) 100%);
+    opacity: 0.55;
+}
+.section-five {
+    background-color: #70707078;
+    margin: 11vw 6vw 1vw;
+    padding: 3vw 2vw;
+    position: relative;
+    height: 31vw;
+}
+.section-five .left-column {
+    width: 30vw;
+    display: inline-block;
+    color: #fff;
+}
+.section-five p{
+    line-height: 1.8;
+}
+.section-five .title {
+    margin:0;
+}
+.section-five .subtitle {
+    margin-bottom:0;
+}
+.section-five .video-container {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top:-7vw;
+    right: -10vw;
+}
+.section-five .video-container img {
+    width: 20vw;
+    height: auto;
+    display: inline-block;
+    margin: 1vw;
+    border-radius: 6px;
+}
+.section-six {
+    text-align: center;
+    padding: 1vw 7vw;
+    color: #fff;
+    height:44vw;
+}
+.section-six h2 {
+    margin-bottom:0;
+}
+.section-six .subtitle {
+    margin-top:0;
+    font-size: 1.8vw;
+}
+
+.section-six .boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.section-six .boxes img {
+    width: 5vw;
+}
+
+.divider {
+    width: 100%;
+}
+
+.divider .button.aqua::before, .divider .button.aqua::after {
+    width: 90%;
+    content: "";
+    display: block;
+    position: absolute;
+    right:0;
+    margin-top:1vw;
+    border-inline: 1px solid #fff;
+}
+
+.section-seven {
+    background-color: #EF2218;
+    padding: 1vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11vw;
+}
+.section-seven .title {
+    margin-bottom:0;
+    font-size: 2.7vw;
+    text-transform: uppercase;
+}
+.section-seven p {
+    color: #fff;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    margin-top:0;
+}
+.section-eight {
+    text-align: center;
+    padding: 2vw 10vw;
+    height: 45vw;
+}
+
+.section-eight p {
+    color: #fff;
+}
+.section-eight .title {
+    margin-bottom:0;
+}
+
+.section-eight .boxes {
+    display: flex;
+    justify-content: center;
+}
+.section-eight .boxes img {
+    width: 4vw;
+}
+
+.section-nine {
+    text-align: center;
+    padding: 1vw 13vw;
+}
+
+.section-nine p{
+    color: #fff;
+}
+
+.section-nine .boxes {
+    display: flex;
+    padding-bottom:3vw;
+}
+
+.section-nine .boxes .button.clear {
+    font-family: 'Karla';
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    width: 14vw;
+    padding: 2vw;
+    margin: 0 1vw;
+}
+
+.section-ten {
+    background-image: url("assets/images/section-ten-bg.jpg");
+}
+
+.section-eleven {
+
+}
+.section-eleven img.large{
+    width: 55vw;
+}
+.section-eleven img{
+    width: 12vw;
 }
