@@ -1,0 +1,1658 @@
+
+body {
+    margin:0;
+    background-color: #000;
+}
+nav.mobile-nav {
+    display: none;
+}
+@font-face{
+	font-family:'Fjalla One';
+	font-display:swap;
+	src:url('assets/fonts/Fjalla_One/FjallaOne-Regular.ttf');
+	font-weight: 400;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('assets/fonts/Karla/Static/Karla-Regular.ttf');
+	font-weight: 400;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('assets/fonts/Karla/Static/Karla-Bold.ttf');
+	font-weight: 700;
+}
+@font-face{
+	font-family:'Karla';
+	font-display:swap;
+	src:url('assets/fonts/Karla/Static/Karla-Medium.ttf');
+	font-weight: 500;
+}
+.green {
+    color:#D8FF00;
+    transition: .5s;
+}
+
+.button {
+    font-family: 'Fjalla One';
+    font-size: 1.2vw;
+    padding: .7vw 1.8vw;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.red {
+    background-color: #EF2218;
+    color: #fff;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.red:hover {
+    background-color: #D8FF00;
+    color: #000;
+}
+
+.red svg {
+    position: relative;
+    left: .8vw;
+    transition: .5s;
+}
+
+.aqua {
+    background-color: #00ABB8;
+    color: #fff;
+    border-radius: 6px;
+    transition: .5s;
+}
+.aqua:hover {
+    background-color:#fff;
+    color: #000;
+}
+
+.white {
+    background-color: #FFFFFF;
+    color: #000;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.white svg {
+    fill: #000;
+}
+
+.white:hover {
+    background-color: #D8FF00;
+}
+
+.clear {
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .5s;
+}
+
+.clear:hover {
+    background-color: #00ABB8;
+}
+
+.button.clear:hover svg {
+    fill:#fff;
+}
+
+.clear svg, .button svg {
+    height: 1vw;
+    width: 1vw;
+    transition: .5s;
+}
+.bold {
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Karla';
+    font-size: 1vw;
+    color: #fff;
+}
+a {
+    transition: .5s;
+    color: #fff;
+    font-family: 'Karla';
+}
+
+h1, .subtitle {
+    font-family: 'Karla';
+    text-transform: capitalize;
+    font-size: 2vw;
+    color: #fff;
+}
+h2, .title {
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
+    font-size: 2.7vw;
+    color: #fff;
+}
+svg {
+    fill: #fff;
+}
+
+.top-bar{
+    background:black;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    padding:.5vw 5vw 0;
+    font-family: 'Karla';
+    height: 2vw;
+    position: relative;
+}
+.top-bar svg:hover {
+    fill: #EF2218;
+}
+
+.top-bar a {
+    color:#fff;
+    text-decoration:none;
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+.top-bar .right a:hover {
+    color:#EF2218;
+}
+
+.top-bar .right a:hover svg {
+    fill: #EF2218;
+}
+
+.top-bar .left a.green {
+    text-decoration: underline;
+    color:#D8FF00;
+    padding-left: .5vw;
+    font-weight: 500;
+    position: relative;
+    top:-.3vw;
+    transition: .5s;
+}
+
+.top-bar .left a.green:hover {
+    color: #EF2218;
+}
+
+.top-bar svg {
+    padding: 0 .46vw;
+    height:1.2vw;
+    width:1.2vw;
+    transition: .5s;
+}
+
+.top-bar .right svg {
+    height: 1vw;
+    width: 1vw;
+}
+.top-bar .right .login {
+    border-left: solid 1px #fff;
+    display: inline-block;
+    height: 2.5vw;
+    top: -.5vw;
+    position: relative;
+    margin-left:.5vw;
+}
+
+.top-bar .right .login a {
+    color:#EF2218;
+    text-decoration: underline;
+    font-weight: 500;
+    padding-left: 1vw;
+    top: .4vw;
+    position: relative;
+    transition: .5s;
+}
+.top-bar .right .login a:hover {
+    color: #fff;
+}
+
+.nav-bar {
+    padding: 1vw 5vw;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    height: 3vw;
+}
+.nav-bar img {
+    height: auto;
+    width: 9vw;
+    display: inline-block;
+}
+
+.nav-bar .links {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10vw;
+    padding-top:1vw;
+}
+
+.nav-bar .links a {
+    font-family: 'Fjalla One';
+    color: #fff;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: 0 .68vw;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav-bar .links a:hover {
+    color: #EF2218;
+}
+
+.nav-bar .buttons {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2vw;
+    margin-top:1vw;
+}
+
+.nav-bar .buttons .button {
+    padding: .7vw 1.5vw;
+}
+
+.nav-bar .buttons .button.clear {
+    position: relative;
+    left: 2vw;
+}
+nav .green.free-shipping {
+    text-decoration: none;
+    font-size: 1.36vw;
+    font-family: 'Karla';
+    text-transform: capitalize;
+    letter-spacing: .017vw;
+    position: absolute;
+    right: 8vw;
+    margin-top: 1vw;
+    transition: .5s;
+}
+nav .green.free-shipping svg {
+    height: 1vw;
+    transition: .5s;
+    fill: #D8FF00;
+}
+
+nav .green.free-shipping:hover {
+    color: #fff;
+}
+
+nav .green.free-shipping:hover svg {
+    fill: #fff;
+}
+
+a .green:hover {
+    color: #fff;
+}
+
+.button:hover svg,
+.button.red:hover svg {
+    fill:#000;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+                                                        /*INTERNAL PAGES*/
+
+                /**************************
+                          GENERAL
+                ***************************/
+
+.titlebar {
+    background-image: url('assets/images/titlebar-bg.jpg');
+    background-size: 102%;
+    height: 16.5vw;
+    padding: 7vw 7.6vw 2vw;
+    margin-top: -6vw;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlebar .titlebar-header {
+    font-family: 'Fjalla One';
+    font-size: 2.9vw;
+    padding-top: 2.4vw;
+}
+
+.title, .subtitle {
+    margin:0;
+    padding:0;
+}
+.section-free-shipping {
+    background-color: #EF2218;
+    padding: 1vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.5vw;
+    position: relative;
+}
+
+.section-free-shipping .title {
+    margin-bottom: 0;
+    font-size: 2.7vw;
+    text-transform: uppercase;
+}
+
+.section-free-shipping p {
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    margin-top: 0;
+    position: relative;
+}
+
+.section-free-shipping .button {
+    position: relative;
+}
+
+.section-free-shipping .bg-1,
+.section-free-shipping .bg-2 {
+    position: absolute;
+    height: 9vw;
+}
+
+.section-free-shipping .bg-1 {
+    left: 1vw;
+    bottom: 0;
+}
+
+.section-free-shipping .bg-2 {
+    top: 0;
+    right: 5vw;
+}
+
+.divider-text {
+    width: 100%;
+    height: 7vw;
+    text-align: center;
+}
+
+.divider-text p {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    font-size: 2.8vw;
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.divider-text p::before,
+.divider-text p::after {
+    width: 41vw;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2vw;
+    height: 1px;
+    background-color: #fff;
+}
+
+.divider-text p::before {
+    position: absolute;
+    left: 0vw;
+}
+
+.divider-text p::after {
+    position: absolute;
+    right: 0vw;
+}
+
+.product.title::after {
+    content:"";
+    border-bottom: 1.5px solid #fff;
+    width: 14%;
+    display: block;
+    padding-top:3vw;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.breadcrumb {
+    font-size: 1.6vw;
+    display: block;
+    text-decoration: none;
+    font-family: 'Karla';
+    text-transform: capitalize;
+    padding: 2vw 0;
+}
+.points {
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.price {
+    font-size: 3vw;
+    margin: 0;
+    color: #EF2218;
+}
+
+ul li {
+    color: #fff;
+    font-family: 'Karla';
+}
+
+                /**************************
+                          ABOUT
+                ***************************/
+
+.about-section-one {
+    background-color: #222222;
+    margin: 8vw 7vw 0 7vw;
+    padding: 3vw 3vw 6vw;
+    position: relative;
+    height: auto;
+}
+
+.about-section-one p{
+    line-height: 1.9;
+}
+
+.about-section-one .left {
+    width: 45vw;
+    display: inline-block;
+}
+
+.about-section-one .right {
+    width: 43vw;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top:-4vw;
+    right: -9vw;
+    overflow: hidden;
+}
+
+.about-section-one .right img {
+    height: 19.5vw;
+    width: auto;
+    margin: .7vw;
+}
+
+.about-section-two {
+    padding: 2vw 0;
+    height: 44vw;
+}
+.about-section-two .boxes {
+    display: flex;
+    justify-content: center;
+    padding: 1vw 6vw 4vw;
+}
+
+.about-section-two .boxes .box .title {
+    font-size: 1.9vw;
+    margin-bottom: .5vw;
+    padding-left: 1vw;
+}
+
+.about-section-two .boxes .box .title::after {
+    border-bottom: 1px solid #fff;
+    width: 92%;
+    text-align: right;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 1vw;
+}
+
+.about-section-two .boxes .box .text-box {
+    width: 23vw;
+    line-height: 1.6;
+    position: absolute;
+    padding: .5vw 1vw;
+}
+
+.about-section-two .boxes .box .text-box svg {
+    fill: #EF2218;
+}
+
+.about-section-two .boxes .box .text-box .button {
+    color: #EF2218;
+    margin-left: -1.2vw;
+    position: relative;
+    transition: .5s;
+}
+
+.about-section-two .boxes .box .text-box .button:hover {
+    color: #D8FF00;
+}
+
+.about-section-two .boxes .box .text-box .button:hover svg {
+    fill: #D8FF00;
+}
+
+.about-section-two .boxes .box {
+    position: relative;
+    width: 26vw;
+    height: 36vw;
+    overflow: hidden;
+    padding: 2vw 1vw;
+    margin: 1vw;
+    text-align: left;
+}
+
+.about-section-two .boxes .box picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.about-section-two .boxes .box picture img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000 0%, rgba(84, 84, 84, 0) 100%);
+    opacity: 0.55;
+}
+.about-section-two .boxes .box .button svg {
+    padding-left: 2vw;
+}
+.bold {
+    font-weight: 700;
+}
+.subtitle.bold {
+    font-size: 1.87vw;
+}
+
+                /**************************
+                          CONTACT
+                ***************************/
+
+.contact-section-one {
+    padding: 8vw 6vw 4vw;
+    position: relative;
+    height: auto;
+    position: relative;
+}
+.contact-section-one .left {
+    width: 44vw;
+    display: inline-block;
+}
+
+.contact-section-one .left .bg-1 {
+    position: absolute;
+    top:0;
+    height: 9vw;
+}
+.contact-section-one .right {
+    width: 33vw;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10vw;
+}
+.contact-section-one .right .top {
+    background-color: #222222;
+    padding: 3vw;
+}
+.contact-section-one h2 {
+    margin: 0;
+    font-size: 2.1vw;
+    padding-bottom: 2vw;
+}
+
+.contact-section-one .right .top a {
+    text-decoration: none;
+    font-family: 'Karla';
+    transition: .5s;
+}
+.contact-section-one .right .top a:hover {
+    color:#EF2218;
+}
+
+.contact-section-one .right .top .contact-links {
+    display: inline-block;
+    padding-left:2vw;
+    padding-bottom: 2vw;
+}
+
+.contact-section-one .right .top svg.envelope {
+    height: .9vw;
+}
+
+.contact-section-one .right .top svg {
+    height: 1.1vw;
+    display: inline-block;
+}
+.contact-section-one .right .top .hours {
+    font-size: 1.2vw;
+}
+.contact-section-one .right .map iframe {
+    width: 33vw;
+    height: 27vw;
+    margin-top: 3vw;
+    border-radius: 6px;
+}
+
+
+
+
+                /**************************
+                        KOI FOR SALE
+                ***************************/
+
+.koi-sale-section-one {
+    background-color: #000;
+    padding: 3.5vw 5vw 4vw;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+
+.koi-sale-section-one .bg-1 {
+    position: absolute;
+    top: 0;
+}
+
+.koi-sale-section-one .column {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.koi-sale-section-one .column svg {
+    display: inline-block;
+    vertical-align: top;
+    height: 3.5vw;
+    width: 3.5vw;
+    position: relative;
+    top: 1vw;
+}
+
+.koi-sale-section-one .column .text-box {
+    display: inline-block;
+    width: 20vw;
+    padding-left: 1vw;
+}
+
+.koi-sale-section-one .column a.text-box {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.koi-sale-section-one .column.two {
+    padding-left: 7vw;
+}
+
+.koi-sale-section-one .column.three {
+    padding-left: 7vw;
+}
+
+.koi-sale-section-one .column .text-box .box-title {
+    text-transform: uppercase;
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+
+.koi-sale-section-one .column .text-box p {
+    font-size: 1vw;
+    margin-top: 0;
+    line-height: 1.5;
+    letter-spacing: .01vw;
+}
+
+.koi-sale-section-one .column .text-box svg {
+    height: 1vw;
+    width: 1vw;
+    float: right;
+    fill: #EF2218;
+    transition: .5s;
+}
+
+.koi-sale-section-one .column a.text-box:hover {
+    color: #D8FF00;
+}
+
+.koi-sale-section-one .column a.text-box:hover svg {
+    fill: #D8FF00;
+}
+
+.koi-sale-section-two {
+    background-color: #222222;
+    margin: 6vw 6vw 1vw;
+    padding: 1vw 2vw;
+    position: relative;
+    height: 27vw;
+    z-index: 1;
+}
+
+.koi-sale-section-two p {
+    line-height: 1.8;
+}
+
+.koi-sale-section-two .left-column {
+    width: 40vw;
+    padding-right: 2vw;
+    display: inline-block;
+}
+
+.koi-sale-section-two .left-column .subtitle {
+    margin-bottom: 0;
+    margin-top: 1.5vw;
+}
+
+.koi-sale-section-two .right-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 35vw;
+    margin-top: -4vw;
+}
+
+.koi-sale-section-two .left-column h2 {
+    width: 34vw;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.koi-sale-section-two .right-column img {
+    width: 45vw;
+    height: auto;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.81);
+    border-radius: 6px;
+}
+
+
+.koi-sale-section-two .right-column .button.red {
+    position: relative;
+    left: 8vw;
+    color: #D8FF00;
+    top:-1vw;
+}
+
+.koi-sale-section-two .right-column .button.red:hover {
+    color: #000;
+}
+
+.koi-sale-section-two .right-column .button.red svg {
+    fill:#D8FF00;
+}
+.koi-sale-section-two .right-column .button.red:hover svg {
+    fill: #000;
+}
+.koi-sale-section-three {
+    padding-bottom: 3vw;
+    position: relative;
+    overflow: hidden;
+}
+.koi-sale-section-three .subtitle {
+    padding: 0 19vw;
+    text-align: center;
+    font-size: 1.8vw;
+}
+.koi-sale-section-three .boxes {
+    display: flex;
+    justify-content: center;
+    padding-top:10vw;
+    flex-wrap: wrap;
+}
+
+.koi-sale-section-three .boxes .box {
+    padding-bottom: 3vw;
+}
+.koi-sale-section-three .boxes .box img {
+    width: 15vw;
+    margin: 0 1vw;
+}
+
+.koi-sale-section-three .boxes .box .title {
+    font-size: 1.5vw;
+    font-family: 'Karla';
+    text-align: center;
+}
+
+.koi-sale-section-three .boxes .box .info-box .red {
+    display: block;
+    width: 46%;
+    position: relative;
+    left: 2vw;
+}
+
+.koi-sale-section-three .boxes .box .info-box .fish-description {
+    display: inline-block;
+    background-color: #fff;
+    width: 7vw;
+    color: #000;
+    height: 6.5vw;
+    position: relative;
+    top: -1vw;
+    text-transform: uppercase;
+    left: 1.5vw;
+}
+
+.koi-sale-section-three .boxes .box .info-box .fish-description p {
+    margin: 0;
+    font-size: 1.8vw;
+    line-height: 1;
+    letter-spacing: .06vw;
+    color: #000;
+}
+
+.koi-sale-section-three .boxes .box .info-box .fish-description p:last-of-type {
+    font-size: .9vw;
+}
+
+.koi-sale-section-three .boxes .box .info-box .fjalla {
+    font-size: 1.5vw;
+    font-family: 'fjalla One';
+}
+
+.koi-sale-section-three .boxes .box .info-box .price {
+    display: inline-block;
+    width: 9vw;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+    left: 2vw;
+}
+
+.koi-sale-section-three .boxes .box .info-box .price p:last-of-type {
+    font-size: 1.3vw;
+    margin-top: -.5vw;
+}
+
+.koi-sale-section-three .bg-1 {
+    position: absolute;
+    right: -3vw;
+    height: 31vw;
+    z-index: -1;
+}
+
+.koi-sale-section-three .bg-2 {
+    position: absolute;
+    left: -2vw;
+    height: 38vw;
+    z-index: -1;
+    bottom: 34vw;
+}
+
+                /**************************
+                      SPECIFIC PRODUCT
+                ***************************/
+.koi-product-section-one {
+    border-bottom: 1px solid #fff;
+    padding: 2vw 7vw 5vw;
+    position: relative;
+    overflow: hidden;
+}
+.koi-product-section-one .left {
+    display: inline-block;
+    width: 35vw;
+}
+.koi-product-section-one img {
+    width: 32vw;
+    height:auto;
+}
+.koi-product-section-one .right {
+    display: inline-block;
+    width: 40vw;
+    vertical-align: top;
+}
+.koi-product-section-one .right .description {
+    padding-bottom: 2vw;
+}
+.koi-product-section-one .right .description p{
+    font-size: 1.3vw;
+    line-height: 1.2vw;
+}
+.koi-product-section-one .button.white {
+    margin-left: 1vw;
+}
+.koi-product-section-one .bg-1 {
+    position: absolute;
+    right: -4vw;
+    height: 21vw;
+    z-index: -1;
+    bottom: 1vw;
+}
+.koi-product-section-two {
+    border-bottom: 1px solid #fff;
+    padding: 4vw 11vw;
+}
+.koi-product-section-two p {
+    font-size: 1.3vw;
+}
+.koi-product-section-three {
+    padding: 4vw 11vw;
+}
+
+.koi-product-section-three p {
+    font-size: 1.3vw;
+    line-height: 1.5;
+}
+
+.koi-product-section-four {
+    padding-bottom: 6vw;
+    position: relative;
+}
+
+.koi-product-section-four .bg-1 {
+    position: absolute;
+    left: -3vw;
+    height: 28vw;
+    top: -6vw;
+}
+
+.koi-product-section-four .subtitle {
+    padding: 0 19vw;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.koi-product-section-four .divider-text p::before,
+.divider-text p::after {
+    width: 37vw;
+}
+
+.koi-product-section-four .boxes {
+    display: flex;
+    justify-content: center;
+    padding-top: 4vw;
+}
+
+.koi-product-section-four .boxes .box img {
+    width: 15vw;
+    margin: 0 1vw;
+}
+
+.koi-product-section-four .boxes .box .title {
+    font-size: 1.5vw;
+    font-family: 'Karla';
+    text-align: center;
+}
+
+.koi-product-section-four .boxes .box .info-box .red {
+    display: block;
+    width: 46%;
+    position: relative;
+    left: 2vw;
+}
+
+.koi-product-section-four .boxes .box .info-box .fish-description {
+    display: inline-block;
+    background-color: #fff;
+    width: 7vw;
+    color: #000;
+    height: 6.5vw;
+    position: relative;
+    top: -1vw;
+    text-transform: uppercase;
+    left: 1.5vw;
+}
+
+.koi-product-section-four .boxes .box .info-box .fish-description p {
+    margin: 0;
+    font-size: 1.8vw;
+    line-height: 1;
+    letter-spacing: .06vw;
+    color: #000;
+}
+
+.koi-product-section-four .boxes .box .info-box .fish-description p:last-of-type {
+    font-size: .9vw;
+}
+
+.koi-product-section-four .boxes .box .info-box .fjalla {
+    font-size: 1.5vw;
+    font-family: 'fjalla One';
+}
+
+.koi-product-section-four .boxes .box .info-box .price {
+    display: inline-block;
+    width: 9vw;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+    left: 2vw;
+}
+
+.koi-product-section-four .boxes .box .info-box .price p:last-of-type {
+    font-size: 1.3vw;
+    margin-top: -.5vw;
+}
+
+
+                /**************************
+                        KOI SUPPLIES
+                ***************************/
+.koi-supplies-section-one {
+    text-align: center;
+    position: relative;
+    padding: 5vw 5vw 1vw;
+}
+.koi-supplies-section-one .title {
+    padding-bottom: 1vw;
+}
+.koi-supplies-section-one .bg-1 {
+    position: absolute;
+    top: -1vw;
+    z-index: -1;
+    left: 11vw;
+    width: 28vw;
+}
+.koi-supplies-section-one .left {
+    display: inline-block;
+    width: 42vw;
+    text-align: left;
+    line-height: 1.9;
+}
+.koi-supplies-section-one .right {
+    display: inline-block;
+    width: 42vw;
+    text-align: left;
+    line-height: 1.9;
+    vertical-align: top;
+    padding-left: 4vw;
+}
+.koi-supplies-section-one .right .button.red {
+    color: #D8FF00;
+    top:2vw;
+    position: relative;
+}
+.koi-supplies-section-one .right .button.red:hover {
+    color: #000;
+}
+
+.koi-supplies-section-one .right .button.red svg {
+    fill:#D8FF00;
+}
+
+.koi-supplies-section-one .right .button.red:hover svg {
+    fill: #000;
+}
+.koi-supplies-section-two {
+    padding-bottom: 8vw;
+}
+.koi-supplies-section-two .divider-text {
+    text-align: left;
+    padding-left: 6.5vw;
+}
+.koi-supplies-section-two .divider-text p::before {
+    width:0;
+}
+
+.koi-supplies-section-two .divider-text p::after{
+    width: 66vw;
+}
+.koi-supplies-section-three {
+    background-color: #222222;
+    padding: 3vw 3vw 5vw;
+    margin: 5vw 7vw;
+}
+
+.koi-supplies-section-three .subtitle {
+    font-size: 1.86vw;
+    margin-bottom:-1.3vw;
+}
+
+.koi-supplies-section-three p {
+    line-height: 1.9;
+    font-size: 1.1vw;
+}
+
+.koi-supplies-section-three .button.white {
+    position: relative;
+    left: 1vw;
+    top: 1vw;
+}
+.koi-supplies-section-three .button.red {
+    position: relative;
+    top: 1vw;
+
+}
+
+                /**************************
+                        POND SUPPLIES
+                ***************************/
+
+.koi-supplies-section-two .left {
+    padding-left: 6.7vw;
+    width: 51vw;
+    line-height: 1.9;
+    display: inline-block;
+    margin-top: 5vw;
+
+}
+.koi-supplies-section-two .left img {
+    width: 15.5vw;
+    height: auto;
+}
+
+.koi-supplies-section-two .left .boxes .box {
+    width: 17vw;
+    margin-bottom: 3vw;
+}
+
+.koi-supplies-section-two .left .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+}
+
+.boxes .box .info-box p{
+    margin: 0;
+    line-height: 1;
+}
+
+.boxes .box .info-box {
+    width: 16vw;
+}
+
+.box .info-box .product-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .2vw 0;
+}
+
+.box .info-box .points {
+    font-size: 1vw;
+    padding-top: 2.9vw;
+}
+
+.box .info-box .price {
+    color: #fff;
+    font-size: 1.25vw;
+    padding-top:.7vw;
+}
+
+.box .button.red {
+    position: relative;
+    top: 1vw;
+}
+
+.koi-supplies-section-two .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 31vw;
+    padding-left: 4vw;
+    text-align: right;
+}
+
+.koi-supplies-section-two .right p.green.title {
+    color: #D8FF00;
+    font-size: 2.8vw;
+    padding-top: 5vw;
+}
+
+.koi-supplies-section-two .right:nth-child(3)>p:nth-child(3) {
+    font-size: 1.2vw;
+    line-height: 1.2;
+    padding-left: 6vw;
+    margin-top:0;
+}
+
+.koi-supplies-section-two .right .button.red {
+    position: relative;
+    top:1vw;
+}
+
+                /**************************
+                          SIDEBAR
+                ***************************/
+
+.sidebar {
+    background-color: #222222;
+    padding: 3vw;
+    width: 25vw;
+    text-align: left;
+}
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.1vw;
+    padding: .5vw 0;
+}
+
+.sidebar .subtitle::after,
+.sidebar .uppercase::after {
+    border-bottom: 1px solid #fff;
+    content: "";
+    display: block;
+    width: 124%;
+    left: -3vw;
+    position: relative;
+    padding-top: 2.6vw;
+}
+
+.sidebar .uppercase::after {
+    padding-bottom: 1.7vw;
+    padding-top:0;
+}
+
+.sidebar .uppercase:last-child::after {
+    display: none;
+}
+.sidebar .dropdown {
+    margin-left: 4.5vw;
+}
+.sidebar .uppercase {
+    font-size: 1.28vw;
+    padding-top: 1.7vw;
+}
+
+
+                /**************************
+                         SHIPPING
+                ***************************/
+.koi-shipping-section-one {
+    background-color: #222222;
+    margin: 8vw 7vw;
+    padding: 3vw 4vw 6vw;
+    position: relative;
+}
+
+.koi-shipping-section-one .left {
+    display: inline-block;
+    width: 42vw;
+    line-height: 1.9;
+}
+
+.koi-shipping-section-one .left .button.aqua {
+    position: relative;
+    top:2vw;
+}
+.koi-shipping-section-one .right {
+    display: inline-block;
+    width: 30vw;
+    margin-left: 4vw;
+    margin-top: -7vw;
+    position: absolute;
+}
+.koi-shipping-section-one .right img {
+    height: auto;
+    width: 44vw;
+    padding-bottom: 2vw;
+}
+
+.koi-shipping-section-two {
+    padding: 0vw 11vw 4vw;
+}
+
+.koi-shipping-section-two img {
+    height: auto;
+    width: 29vw;
+    margin-top:-3vw;
+    display: inline-block;
+}
+
+.koi-shipping-section-two .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 43vw;
+    line-height: 1.9;
+    padding-left:5vw;
+}
+
+.koi-shipping-section-two .right .subtitle {
+    font-family: 1.8vw;
+    margin-bottom: -1vw;
+}
+
+.koi-shipping-section-two .right .title {
+    margin-bottom: -1vw;
+}
+
+.koi-shipping-section-two .right ul {
+    margin-left: -1.7vw;
+}
+
+                /**************************
+                       POND MAINTENANCE
+                ***************************/
+
+.koi-maintenance-section-one {
+    background-color: #222222;
+    margin: 8vw 4vw 5vw;
+    padding: 3vw 4vw 2vw;
+    position: relative;
+
+}
+
+.koi-maintenance-section-one .left {
+    display: inline-block;
+    width: 38vw;
+    line-height: 1.9;
+}
+.koi-maintenance-section-one .left p {
+    font-size: 1.1vw;
+}
+.koi-maintenance-section-one .left p.title {
+    margin-top: -1vw;
+    font-size: 2.8vw;
+}
+
+.koi-maintenance-section-one .left p.subtitle {
+    font-size: 1.8vw;
+}
+
+.koi-maintenance-section-one .left p.subtitle:nth-child(3) {
+    font-size: 1.4vw;
+    line-height: 1.3;
+}
+
+.koi-maintenance-section-one .right {
+    display: inline-block;
+    position: absolute;
+    top: -2vw;
+    right: -4vw;
+}
+
+.koi-maintenance-section-one .right img.video {
+    width: 44vw;
+    height: auto;
+    display: block;
+    margin-bottom: 2vw;
+    margin-left: 1vw;
+    border-radius: 6px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.81);
+}
+
+.koi-maintenance-section-one .right img {
+    width: 15vw;
+    height: auto;
+    display: inline-block;
+    margin: 0 .9vw;
+    border-radius: 6px;
+}
+
+.koi-maintenance-section-two .divider-text p::before,
+.koi-maintenance-section-two .divider-text p::after {
+    width: 29vw;
+}
+
+.koi-maintenance-section-two .text-box {
+    text-align: center;
+    margin: 2vw 7vw;
+    padding: 4vw 4vw 2vw;
+    background-color: #222222;
+}
+
+.koi-maintenance-section-two .text-box .title {
+    font-size: 1.8vw;
+}
+
+.koi-maintenance-section-two .text-box .subtitle {
+    font-size: 1.3vw;
+    padding-top: 2vw;
+}
+
+.koi-maintenance-section-two .text-box .left {
+    text-align: left;
+    width: 36vw;
+    display: inline-block;
+    line-height: 1.9;
+    padding-top:1.5vw;
+} 
+
+.koi-maintenance-section-two .text-box .left .box-title {
+    font-size: 1.9vw;
+}
+
+.koi-maintenance-section-two .text-box .right {
+    text-align: left;
+    width: 36vw;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.9;
+    padding-left: 3vw;
+    padding-top:7vw;
+
+}
+
+.koi-maintenance-section-three {
+    text-align: center;
+    margin: 2vw 7vw;
+    padding: 4vw 4vw 2vw;
+    background-color: #222222;
+}
+
+.koi-maintenance-section-three .title {
+    font-size: 1.8vw;
+}
+
+.koi-maintenance-section-three .subtitle {
+    font-size: 1.3vw;
+    padding-top: 2vw;
+}
+
+.koi-maintenance-section-three .left {
+    text-align: left;
+    line-height: 1.9;
+    padding-top: 1.5vw;
+    padding-left: 1vw;
+}
+
+.koi-maintenance-section-three .left .box-title {
+    font-size: 1.9vw;
+}
+.koi-maintenance-section-four {
+    text-align: center;
+    padding: 4vw 5vw 3vw;
+}
+.koi-maintenance-section-four .boxes {
+    display: flex;
+    padding-top: 4vw;
+}
+
+.koi-maintenance-section-four .boxes .button.clear {
+    font-family: 'Karla';
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    padding: 1.6vw 1vw;
+    margin: 0 1.2vw;
+    display: flex;
+    align-items: center;
+    width: 14vw;
+    justify-content: center;
+}
+
+.koi-maintenance-section-five {
+    text-align: center;
+    padding: 0vw 13vw 4vw;
+}
+
+.koi-maintenance-section-five .divider-text p {
+    font-size: 2.8vw;
+}
+
+.koi-maintenance-section-five p{
+    font-size: 1.2vw;
+    line-height: 1.9;
+}
+
+.koi-maintenance-section-five .divider-text p::before,
+.divider-text p::after {
+    width: 34vw;
+}
+
+                /**************************
+                          FOOTER
+                ***************************/
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer .newsletter-section {
+    background-color: #EF2218;
+    padding: 1vw 19vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vw;
+    position: relative;
+}
+
+footer .newsletter-section .bg-1,
+footer .newsletter-section .bg-2 {
+    position: absolute;
+}
+
+footer .newsletter-section .bg-2 {
+    height: 10vw;
+    right: 11vw;
+}
+
+footer .newsletter-section .bg-1 {
+    left: 0vw;
+    position: absolute;
+    height: 8.3vw;
+}
+
+footer .newsletter-section .left .green {
+    font-size: 2.7vw;
+    text-transform: uppercase;
+    color: #D8FF00;
+    font-family: 'Fjalla One';
+    margin-bottom: 0;
+}
+
+footer .newsletter-section .left p {
+    color: #fff;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    margin-top: 0;
+    position: relative;
+}
+
+footer .newsletter-section .button {
+    position: relative;
+}
+
+footer .map iframe {
+    width: 100%;
+    height: 27vw;
+}
+footer .top {
+    padding: 5vw 8vw;
+    position: relative;
+}
+
+footer .top .bg-1, 
+footer .top .bg-2 {
+    position: absolute;
+}
+footer .top .bg-1 {
+    left: -2vw;
+    bottom: 0;
+    height: 20vw;
+}
+footer .top .bg-2 {
+    bottom: 16vw;
+    height: 9vw;
+}
+
+footer .top a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Karla';
+    transition: .5s;
+}
+footer .top a:hover {
+    color: #EF2218;
+}
+
+footer .top .title {
+    font-size: 1.8vw;
+    padding-bottom: 2vw;
+}
+
+footer .col1 {
+    vertical-align: top;
+    display: inline-block;
+    width: 28vw;
+    position: relative;
+}
+footer .social-links svg {
+    height:1.5vw;
+    padding-right: .6vw;
+    transition: .5s;
+}
+footer .col1 a {
+    display: block;
+    text-transform: capitalize;
+    padding: .5vw 0;
+}
+footer col1 > a:nth-child(4) {
+    color: #EF2218;
+}
+.col1 > a:nth-child(4) > svg:nth-child(1) {
+    height: .8vw;
+}
+footer .col1 .social-links a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5vw;
+    margin-top:1vw;
+    transition: .5s;
+}
+footer .col1 .social-links svg:hover {
+    fill: #EF2218;
+}
+footer .col2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 14vw;
+}
+footer .col2 a {
+    display: block;
+    padding: .7vw 0;
+    text-transform: uppercase;
+}
+footer .col3 {
+    vertical-align: top;
+    display: inline-block;
+    width: 16vw;
+}
+footer .col3 a {
+    display: block;
+    padding: .7vw 0;
+    text-transform: uppercase;
+}
+footer .col4 {
+    vertical-align: top;
+    display: inline-block;
+    width: 25vw;
+}
+
+footer .col4 a {
+    display: block;
+    width: 7vw;
+    text-transform: capitalize;
+}
+
+footer .copyright{
+	padding:1vw 3vw;
+	font-size:.8vw;
+	color:white;
+	position:relative;
+    font-family: 'Karla';
+    background-color: #222222;
+}
+footer .copyright a{
+	padding:.5vw .2vw;
+	font-size:.8vw;
+	color:white;
+	text-decoration: none;
+}
+footer .copyright span{
+	float:right;
+	margin-right:3vw;
+	position:relative;
+}

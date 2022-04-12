@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preload" as="image" href="assets/images/titlebar-bg.jpg">
+    <link rel="stylesheet" href="internal.css">
+    <link rel="stylesheet" href="mobilestyles.css">
+</head>
+<nav class="mobile-nav">
+    <a class="logo-left" href="/">
+        <picture>
+            <img src="/assets/images/logo.png" alt="Koi Market Logo" />
+        </picture>
+    </a>
+    <div class="pull-right">
+        <div class="phone">
+            <a href="https://www.google.com/maps/place/Koi+Market+Aquatic+Gardens/@40.8718412,-73.4399225,15z/data=!4m2!3m1!1s0x0:0xfa8776bf7c275ee2?sa=X&ved=2ahUKEwjrl4WItu72AhVqrHIEHX--A7IQ_BJ6BAg2EAU"
+                aria-label="Click for directions">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="map-marked" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                    style="width:7vw;position:relative;top:.5vw;right:1vw;">
+                    <path fill="#fff"
+                        d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z"
+                        class=""></path>
+                </svg>
+            </a>
+        </div>
+        <div class="phone">
+            <a href="mailto:sales@koimarket.com" style="padding-bottom:0;" aria-label="Email us today">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="envelope" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    style="width:8vw;position:relative;right:2vw;">
+                    <path fill="#fff"
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                        class=""></path>
+                </svg>
+            </a>
+        </div>
+        <div class="phone">
+            <a href="tel:+1-516-809-6771" aria-label="Call Us Today">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="phone" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="margin-top:1vw;width:6vw;">
+                    <path fill="#fff"
+                        d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                        class=""></path>
+                </svg>
+            </a>
+        </div>
+        <div onclick="mobileNav()" class="mobile-nav-btn">
+            <div class="nav-dot" style="opacity:1;"></div>
+            <div class="nav-dot" style="opacity:1;"></div>
+            <div class="nav-dot" style="opacity:1;"></div>
+            <svg aria-hidden="true" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 352 512" class="mobile-dotnav-close" style="opacity:0;">
+                <path fill="#fff"
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div class="mobile-nav-screen" onclick="bodyFunctions()" style="display:none;"></div>
+    <div class="mobile-nav" style="top: -220vw;">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/shop/">Koi For Sale</a>
+        <a href="/pond/">Pond Supplies</a>
+        <a href="/bonsai/">Bonsai For Sale</a>
+        <a href="/pond/">Pond Maintenance</a>
+        <a href="/wholesale/">Wholesale</a>
+        <a href="/resources/">Resources</a>
+        <a href="/contact/" style="border-bottom:0;">Contact</a>
+    </div>
+</nav>
+<nav class="desktop-nav">
+    <div class="top-bar">
+        <div class="left">
+            <a href="mailto:sales@koimarket.com" aria-label="Email Us">
+                <svg id="Group_19" data-name="Group 19" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.527 17.154">
+                    <path id="Path_109" data-name="Path 109" d="M53.45,18.476,60.2,25.317V13.7Z"
+                        transform="translate(-35.674 -9.144)" />
+                    <path id="Path_110" data-name="Path 110" d="M0,25.316l6.748-6.841L0,13.7Z"
+                        transform="translate(0 -9.144)" />
+                    <g id="Group_18" data-name="Group 18">
+                        <g id="Group_17" data-name="Group 17" clip-path="url(#clip-path)">
+                            <path id="Path_111" data-name="Path 111"
+                                d="M14.56,33.307a.666.666,0,0,1-.788,0L9.777,30.48,2.85,37.5H25.464L18.55,30.48Z"
+                                transform="translate(-1.902 -20.343)" />
+                            <path id="Path_112" data-name="Path 112"
+                                d="M0,0V2.887L7.7,8.354l.565.4.565.4,3.419,2.418,3.432-2.431.562-.4.565-.4,7.716-5.467V0Z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/KoiMarketAquaticGardens" target="_blank" rel="noopener"
+                aria-label="Follow us on Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.996"
+                    height="22.001" viewBox="0 0 21.996 22.001">
+                    <g id="Group_7" data-name="Group 7" clip-path="url(#clip-path)">
+                        <path id="Path_102" data-name="Path 102"
+                            d="M20.789,0H1.212A1.212,1.212,0,0,0,0,1.212V20.789A1.212,1.212,0,0,0,1.212,22H11.753v-8.52H8.87V10.167h2.868V7.711c0-2.84,1.732-4.388,4.26-4.388a22.8,22.8,0,0,1,2.561.133V6.423H16.8c-1.382,0-1.647.658-1.647,1.619v2.121h3.29l-.431,3.313h-2.84V22h5.609A1.212,1.212,0,0,0,22,20.784V1.212A1.212,1.212,0,0,0,20.789,0"
+                            transform="translate(0 0)" />
+                    </g>
+                </svg>
+            </a>
+            <a href="https://twitter.com/KoiMarket" target="_blank" rel="noopener" aria-label="Follow us on Twitter">
+                <svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22.545" height="18.309"
+                    viewBox="0 0 22.545 18.309">
+                    <g id="Group_9" data-name="Group 9" transform="translate(0 0)" clip-path="url(#clip-path)">
+                        <path id="Path_103" data-name="Path 103"
+                            d="M22.545,2.168A9.393,9.393,0,0,1,19.89,2.9,4.62,4.62,0,0,0,21.92.336a9.214,9.214,0,0,1-2.935,1.122A4.625,4.625,0,0,0,10.991,4.62a4.83,4.83,0,0,0,.118,1.056A13.149,13.149,0,0,1,1.576.871,4.624,4.624,0,0,0,3,7.024,4.627,4.627,0,0,1,.9,6.447v.062a4.625,4.625,0,0,0,3.711,4.53,4.711,4.711,0,0,1-2.087.08A4.62,4.62,0,0,0,6.84,14.328,9.28,9.28,0,0,1,1.1,16.3,9.434,9.434,0,0,1,0,16.231a13.04,13.04,0,0,0,7.1,2.078A13.052,13.052,0,0,0,20.254,5.159v-.6a9.379,9.379,0,0,0,2.291-2.39"
+                            transform="translate(0 0)" />
+                    </g>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/koimarketaquaticgardens/" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.611"
+                    height="22.569" viewBox="0 0 22.611 22.569">
+                    <g id="Group_11" data-name="Group 11" clip-path="url(#clip-path)">
+                        <path id="Path_104" data-name="Path 104"
+                            d="M11.284,2.054c3.006,0,3.365,0,4.554.066a6.122,6.122,0,0,1,2.092.388,3.744,3.744,0,0,1,2.135,2.135,6.122,6.122,0,0,1,.388,2.092c.057,1.188.066,1.548.066,4.554s0,3.365-.066,4.554a6.122,6.122,0,0,1-.388,2.092A3.744,3.744,0,0,1,17.93,20.07a6.122,6.122,0,0,1-2.092.388c-1.188.057-1.543.066-4.554.066s-3.365,0-4.554-.066a6.122,6.122,0,0,1-2.092-.388A3.745,3.745,0,0,1,2.528,17.93a6.122,6.122,0,0,1-.388-2.092c-.057-1.188-.066-1.548-.066-4.554s0-3.365.066-4.554a6.122,6.122,0,0,1,.388-2.092A3.743,3.743,0,0,1,4.639,2.528a6.122,6.122,0,0,1,2.092-.388c1.188-.057,1.548-.066,4.554-.066m0-2.031c-3.058,0-3.441,0-4.643.066A8.277,8.277,0,0,0,3.905.634,5.726,5.726,0,0,0,.592,3.948,8.277,8.277,0,0,0,.066,6.684C.014,7.886,0,8.269,0,11.327s0,3.441.066,4.643a8.279,8.279,0,0,0,.568,2.693,5.726,5.726,0,0,0,3.313,3.313,8.277,8.277,0,0,0,2.736.525c1.2.052,1.586.066,4.643.066s3.441,0,4.643-.066a8.277,8.277,0,0,0,2.736-.525,5.726,5.726,0,0,0,3.313-3.313,8.277,8.277,0,0,0,.525-2.736c.052-1.2.066-1.586.066-4.643s0-3.441-.066-4.643a8.277,8.277,0,0,0-.525-2.736A5.726,5.726,0,0,0,18.706.592,8.277,8.277,0,0,0,15.97.066C14.768.014,14.385,0,11.327,0Z"
+                            transform="translate(0 0)" />
+                        <path id="Path_105" data-name="Path 105"
+                            d="M17.4,11.62A5.784,5.784,0,1,0,23.188,17.4,5.784,5.784,0,0,0,17.4,11.62Zm0,9.538A3.754,3.754,0,1,1,21.158,17.4,3.753,3.753,0,0,1,17.4,21.158"
+                            transform="translate(-6.12 -6.12)" />
+                        <path id="Path_106" data-name="Path 106"
+                            d="M35.034,8.28A1.354,1.354,0,1,1,33.68,9.634,1.353,1.353,0,0,1,35.034,8.28"
+                            transform="translate(-17.738 -4.361)" />
+                    </g>
+                </svg>
+            </a>
+            <a href="https://www.pinterest.com/KoiMarket/" target="_blank" rel="noopener"
+                aria-label="Follow us on Pinterest">
+                <svg id="Group_14" data-name="Group 14" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="17.428" height="22.525"
+                    viewBox="0 0 17.428 22.525">
+                    <g id="Group_13" data-name="Group 13" transform="translate(0 0)" clip-path="url(#clip-path)">
+                        <path id="Path_107" data-name="Path 107"
+                            d="M17.428,7.412c0,5.079-2.84,8.87-6.982,8.87a3.672,3.672,0,0,1-3.162-1.614s-.753,2.982-.909,3.559a13.993,13.993,0,0,1-2.334,4.236.175.175,0,0,1-.3-.076,14.068,14.068,0,0,1,.043-4.918c.246-1.051,1.661-7.053,1.661-7.053a5,5,0,0,1-.412-2.05c0-1.893,1.112-3.346,2.494-3.346A1.731,1.731,0,0,1,9.273,6.963c0,1.183-.753,2.954-1.141,4.591a2,2,0,0,0,2.04,2.494c2.452,0,4.1-3.148,4.1-6.882,0-2.84-1.893-4.956-5.382-4.956a6.129,6.129,0,0,0-6.376,6.2,3.735,3.735,0,0,0,.857,2.537.63.63,0,0,1,.185.724c-.062.237-.2.809-.265,1.037a.473.473,0,0,1-.569.353.522.522,0,0,1-.08-.027C.843,12.288,0,10.309,0,8.085,0,4.407,3.1,0,9.249,0c4.932,0,8.179,3.574,8.179,7.412"
+                            transform="translate(0 0)" />
+                    </g>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCnulz6Gg7Rbqk5rPItj8Qbw?" target="_blank" rel="noopener"
+                aria-label="Follow us on Youtube">
+                <svg id="Group_16" data-name="Group 16" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22.531" height="15.431"
+                    viewBox="0 0 22.531 15.431">
+                    <g id="Group_15" data-name="Group 15" transform="translate(0 0)" clip-path="url(#clip-path)">
+                        <path id="Path_108" data-name="Path 108"
+                            d="M22.531,12.212a3.228,3.228,0,0,1-3.219,3.219H3.219A3.228,3.228,0,0,1,0,12.212V3.219A3.228,3.228,0,0,1,3.219,0H19.312a3.228,3.228,0,0,1,3.219,3.219ZM8.937,10.47l6.092-3.152L8.937,4.165Z"
+                            transform="translate(0 0)" />
+                    </g>
+                </svg>
+            </a>
+            <a class="green" href="/newsletter/">Join our newsletter</a>
+        </div>
+        <div class="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+                <path id="bxs-map"
+                    d="M12,2A8.008,8.008,0,0,0,4,9.995C3.971,16.44,11.7,21.784,12,22c0,0,8.029-5.56,8-12A8.009,8.009,0,0,0,12,2Zm0,12a4,4,0,1,1,4-4A4,4,0,0,1,12,14Z"
+                    transform="translate(-4 -2)" />
+            </svg>
+            <a href="https://www.google.com/maps/place/Koi+Market+Aquatic+Gardens/@40.8718412,-73.4399225,15z/data=!4m2!3m1!1s0x0:0xfa8776bf7c275ee2?sa=X&ved=2ahUKEwjrl4WItu72AhVqrHIEHX--A7IQ_BJ6BAg2EAU"
+                target="_blank" rel="noopener">475 West Main Street, Huntington, NY 11743
+            </a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.199" height="20.199" viewBox="0 0 20.199 20.199">
+                <path id="bxs-phone"
+                    d="M22.828,19.008l-4.609-4.191a1.135,1.135,0,0,0-1.577.049l-2.713,2.79a6.509,6.509,0,0,1-3.318-1.882,6.478,6.478,0,0,1-1.882-3.318l2.788-2.714a1.134,1.134,0,0,0,.049-1.577L7.376,3.557a1.134,1.134,0,0,0-1.577-.1l-2.46,2.11a1.134,1.134,0,0,0-.329.736A17.124,17.124,0,0,0,7.875,18.511a17.169,17.169,0,0,0,11.8,4.873c.229,0,.37-.007.407-.009a1.125,1.125,0,0,0,.735-.33l2.109-2.462a1.13,1.13,0,0,0-.1-1.576Z"
+                    transform="translate(-3 -3.185)" />
+            </svg>
+            <a href="tel:+1-516-809-6771">+1 (516) 809 6771</a>
+            <div class="login"><a href="/members/">Member Log In</a></div>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <a href="/"><img src="assets/images/logo.png" alt="Koi Market Logo"></a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/shop/">Koi for Sale</a>
+            <a href="/supplies/">Pond Supplies</a>
+            <a href="/bonsai/">Bonsai for Sale</a>
+            <a href="/maintenance/">Pond Maintenance</a>
+            <a href="/wholesale/">Wholesale</a>
+            <a href="/resources/">Resources</a>
+        </div>
+        <div class="buttons">
+            <a class="button red" href="/contact/">Contact Us</a>
+            <a class="button clear" href="/cart/">$1,000
+                <svg xmlns="http://www.w3.org/2000/svg" width="24.828" height="21" viewBox="0 0 24.828 21">
+                    <g id="bxs-cart-alt" transform="translate(-2 -4)">
+                        <path id="Path_101" data-name="Path 101"
+                            d="M25.586,4H2V6.483H4.855L9.226,18.5a2.488,2.488,0,0,0,2.332,1.635h10.3V17.655h-10.3l-.9-2.483H21.862A1.24,1.24,0,0,0,23,14.42L26.726,5.73A1.239,1.239,0,0,0,25.586,4Z"
+                            transform="translate(0 0)" />
+                        <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="1.5" cy="2" rx="1.5" ry="2"
+                            transform="translate(11 21)" />
+                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="2" cy="2" r="2" transform="translate(18 21)" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <a class="green free-shipping" href="/shop/">Get Free Shipping on Southwest Cargo When You Spend
+        $500 or more <svg xmlns="http://www.w3.org/2000/svg" width="23.344" height="21.548" viewBox="0 0 23.344 21.548">
+            <path id="bxs-right-arrow-alt" d="M29.344,16.774,16.774,6v8.978H6V18.57H16.774v8.978Z"
+                transform="translate(-6 -6)" />
+        </svg>
+    </a>
+</nav>
+
+<body>
+    <main>
+        <section class="titlebar">
+            <h1 class="titlebar-header">Koi For Sale</h1>
+        </section>
+        <img src="assets/images/KoiSpecificProduct.jpg"
+            style="position: absolute;width: 100%;top: 0;left: 0;opacity: .2;display: none;display: block;">
+        <section class="koi-product-section-one">
+            <a href="previous" class="breadcrumb">breadcrumb</a>
+            <div class="left">
+                <img src="assets/images/product-1.jpg" alt="koi fish for sale"/>
+            </div>
+            <div class="right">
+               <p class="product title">Shochikubai (T4-C4) ID#17907</p>
+               <p class="points">265 points</p>
+                <p class="price">$800</p>
+                <div class="description">
+                    <p>Koi Type: Doitsu Yamato Nishiki</p>
+                    <p>Breeder: Aoki Koi Farm</p>
+                    <p>Size: 16″</p>
+                    <p>Age: Sansai</p>
+                    <p>Gender: Unknown</p>
+                </div>
+                <a class="button red">Add to Cart <svg id="bxs-cart-add" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                        viewBox="0 0 20 18">
+                        <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.5" cy="1.5" r="1.5" transform="translate(7 15)" />
+                        <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.5" cy="1.5" r="1.5" transform="translate(14 15)" />
+                        <path id="Path_198" data-name="Path 198"
+                            d="M21,7H7.334L6.18,4.23A2,2,0,0,0,4.333,3H2V5H4.334L9.077,16.385A1,1,0,0,0,10,17h8a1,1,0,0,0,.937-.648l3-8A1,1,0,0,0,21,7Zm-4,6H15v2H13V13H11V11h2V9h2v2h2Z"
+                            transform="translate(-2 -3)" />
+                    </svg></a>
+                    <a class="button white" href="pay">Pay now with <svg xmlns="http://www.w3.org/2000/svg" width="21.912" height="22.42" viewBox="0 0 21.912 22.42">
+                        <path id="bxl-google"
+                            d="M24.68,12.218H14.232v4.33h6.013c-.56,2.752-2.9,4.333-6.013,4.333a6.624,6.624,0,1,1,0-13.249A6.482,6.482,0,0,1,18.36,9.11l3.262-3.261a11.209,11.209,0,1,0-7.39,19.618c5.6,0,10.7-4.077,10.7-11.21a9.368,9.368,0,0,0-.253-2.039Z"
+                            transform="translate(-3.022 -3.047)" />
+                    </svg> pay</a>
+            </div>
+            <svg class="bg-1" xmlns="http://www.w3.org/2000/svg" width="230.078" height="679.214" viewBox="0 0 230.078 679.214">
+                <path id="Path_213" data-name="Path 213" d="M131.77,0,0,230.078H679.214Z"
+                    transform="translate(0 679.214) rotate(-90)" fill="#222" opacity="0.7" />
+            </svg>
+        </section>
+        <section class="koi-product-section-two">
+            <p class="subtitle bold">Additional information</p>
+            <p><span class="uppercase">Weight</span> 2400 oz</p>
+            <p><span class="uppercase">Dimensions</span> 29 × 12 × 12 in</p>
+        </section>
+        <section class="koi-product-section-three">
+            <p class="subtitle bold">Description</p>
+            <p>Our beautiful Doitsu Shochikubai can’t wait to come home with you!</p>
+            <p>Shipping Process</p>
+            <p><span class="uppercase">Important</span>: We need 5–10 days notice prior to all koi shipments so we have enough time to prepare your koi for a safe
+            journey! When packing koi we consider the condition of the koi and therefore take into account water temperature and
+            delivery time. We reserve the right to determine how many koi can be shipped in a box. Just to make sure your fin
+            puppies arrive as safe as possible!</p>
+            
+            <p>Please contact us after purchasing to confirm shipping date and shipping method. Shipping is paid for separately after
+            checkout. If you have any questions about shipping, contact us at <a href="tel:+1-516-809-6771">(516) 809-6771</a> or <a href="mailto:sales@koimarket.com">sales@koimarket.com</a></p>
+            
+            <p>Your Shochikubai will be yours soon!</p>
+        </section>
+        <section class="koi-product-section-four">
+        <svg class="bg-1" xmlns="http://www.w3.org/2000/svg" width="222.51" height="617.58" viewBox="0 0 222.51 617.58">
+            <path id="Path_200" data-name="Path 200" d="M119.812,0,0,222.51H617.58Z" transform="translate(222.51) rotate(90)"
+                fill="#222" opacity="0.7" />
+        </svg>
+            <div class="divider-text">
+                 <p>You might also like</p>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <p class="title">SHUSUI</p>
+                    <img src="assets/images/koi-sale.png" />
+                    <div class="info-box">
+                        <div class="fish-description">
+                            <p class="fjalla">maruhiro</p>
+                            <p>female</p>
+                            <p class="fjalla">age: nisai</p>
+                            <p>59 cm/22.22”</p>
+                        </div>
+                        <div class="price">
+                            <p>member <br>price: $800</p>
+                            <p>$1,000</p>
+                        </div>
+                        <a class="button red">Add to cart <svg id="bxs-cart-add" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="18" viewBox="0 0 20 18">
+                                <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(7 15)" />
+                                <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(14 15)" />
+                                <path id="Path_198" data-name="Path 198"
+                                    d="M21,7H7.334L6.18,4.23A2,2,0,0,0,4.333,3H2V5H4.334L9.077,16.385A1,1,0,0,0,10,17h8a1,1,0,0,0,.937-.648l3-8A1,1,0,0,0,21,7Zm-4,6H15v2H13V13H11V11h2V9h2v2h2Z"
+                                    transform="translate(-2 -3)" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="title">SHUSUI</p>
+                    <img src="assets/images/koi-sale.png" />
+                    <div class="info-box">
+                        <div class="fish-description">
+                            <p class="fjalla">maruhiro</p>
+                            <p>female</p>
+                            <p class="fjalla">age: nisai</p>
+                            <p>59 cm/22.22”</p>
+                        </div>
+                        <div class="price">
+                            <p>member <br>price: $800</p>
+                            <p>$1,000</p>
+                        </div>
+                        <a class="button red">Add to cart <svg id="bxs-cart-add" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="18" viewBox="0 0 20 18">
+                                <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(7 15)" />
+                                <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(14 15)" />
+                                <path id="Path_198" data-name="Path 198"
+                                    d="M21,7H7.334L6.18,4.23A2,2,0,0,0,4.333,3H2V5H4.334L9.077,16.385A1,1,0,0,0,10,17h8a1,1,0,0,0,.937-.648l3-8A1,1,0,0,0,21,7Zm-4,6H15v2H13V13H11V11h2V9h2v2h2Z"
+                                    transform="translate(-2 -3)" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="title">SHUSUI</p>
+                    <img src="assets/images/koi-sale.png" />
+                    <div class="info-box">
+                        <div class="fish-description">
+                            <p class="fjalla">maruhiro</p>
+                            <p>female</p>
+                            <p class="fjalla">age: nisai</p>
+                            <p>59 cm/22.22”</p>
+                        </div>
+                        <div class="price">
+                            <p>member <br>price: $800</p>
+                            <p>$1,000</p>
+                        </div>
+                        <a class="button red">Add to cart <svg id="bxs-cart-add" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="18" viewBox="0 0 20 18">
+                                <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(7 15)" />
+                                <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(14 15)" />
+                                <path id="Path_198" data-name="Path 198"
+                                    d="M21,7H7.334L6.18,4.23A2,2,0,0,0,4.333,3H2V5H4.334L9.077,16.385A1,1,0,0,0,10,17h8a1,1,0,0,0,.937-.648l3-8A1,1,0,0,0,21,7Zm-4,6H15v2H13V13H11V11h2V9h2v2h2Z"
+                                    transform="translate(-2 -3)" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="title">SHUSUI</p>
+                    <img src="assets/images/koi-sale.png" />
+                    <div class="info-box">
+                        <div class="fish-description">
+                            <p class="fjalla">maruhiro</p>
+                            <p>female</p>
+                            <p class="fjalla">age: nisai</p>
+                            <p>59 cm/22.22”</p>
+                        </div>
+                        <div class="price">
+                            <p>member <br>price: $800</p>
+                            <p>$1,000</p>
+                        </div>
+                        <a class="button red">Add to cart <svg id="bxs-cart-add" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="18" viewBox="0 0 20 18">
+                                <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(7 15)" />
+                                <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(14 15)" />
+                                <path id="Path_198" data-name="Path 198"
+                                    d="M21,7H7.334L6.18,4.23A2,2,0,0,0,4.333,3H2V5H4.334L9.077,16.385A1,1,0,0,0,10,17h8a1,1,0,0,0,.937-.648l3-8A1,1,0,0,0,21,7Zm-4,6H15v2H13V13H11V11h2V9h2v2h2Z"
+                                    transform="translate(-2 -3)" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="title">SHUSUI</p>
+                    <img src="assets/images/koi-sale.png" />
+                    <div class="info-box">
+                        <div class="fish-description">
+                            <p class="fjalla">maruhiro</p>
+                            <p>female</p>
+                            <p class="fjalla">age: nisai</p>
+                            <p>59 cm/22.22”</p>
+                        </div>
+                        <div class="price">
+                            <p>member <br>price: $800</p>
+                            <p>$1,000</p>
+                        </div>
+                        <a class="button red">Add to cart <svg id="bxs-cart-add" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="18" viewBox="0 0 20 18">
+                                <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(7 15)" />
+                                <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(14 15)" />
+                                <path id="Path_198" data-name="Path 198"
+                                    d="M21,7H7.334L6.18,4.23A2,2,0,0,0,4.333,3H2V5H4.334L9.077,16.385A1,1,0,0,0,10,17h8a1,1,0,0,0,.937-.648l3-8A1,1,0,0,0,21,7Zm-4,6H15v2H13V13H11V11h2V9h2v2h2Z"
+                                    transform="translate(-2 -3)" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="newsletter-section">
+        <div class="left">
+            <svg class="bg-1" xmlns="http://www.w3.org/2000/svg" width="520.039" height="156" viewBox="0 0 520.039 156">
+                <path id="Path_204" data-name="Path 204" d="M100.889,0,0,156H520.039Z" fill="#de1f15" />
+            </svg>
+
+            <p class="green">Join our newsletter</p>
+            <p>Receive the latest news and exclusive offers every week!</p>
+        </div>
+        <svg class="bg-2" xmlns="http://www.w3.org/2000/svg" width="520.039" height="156" viewBox="0 0 520.039 156">
+            <path id="Path_205" data-name="Path 205" d="M419.15,156,520.039,0H0Z" fill="#de1f15" />
+        </svg>
+
+        <a class="button white" href="/contact/">Sign up today</a>
+    </div>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12068.006015254874!2d-73.4399225!3d40.8718412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa8776bf7c275ee2!2sKoi%20Market%20Aquatic%20Gardens!5e0!3m2!1sen!2sus!4v1649680410683!5m2!1sen!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    <div class="top">
+        <svg class="bg-1" xmlns="http://www.w3.org/2000/svg" width="209.389" height="426.395"
+            viewBox="0 0 209.389 426.395">
+            <path id="Path_207" data-name="Path 207" d="M343.673,209.389,426.395,0H0Z"
+                transform="translate(0 426.395) rotate(-90)" fill="#fff" opacity="0.097" />
+        </svg>
+        <div class="col1">
+            <p class="title">CONTACT</p>
+            <a href="https://www.google.com/maps/place/Koi+Market+Aquatic+Gardens/@40.8718412,-73.4399225,15z/data=!4m2!3m1!1s0x0:0xfa8776bf7c275ee2?sa=X&ved=2ahUKEwjrl4WItu72AhVqrHIEHX--A7IQ_BJ6BAg2EAU"
+                target="_blank" rel="noopener">475 West Main Street, Huntington, NY 11743</a>
+            <a href="tel:+1-516-809-6771">+1 (516) 809 6771</a>
+            <a href="/contact/">Get In Touch With Us <svg xmlns="http://www.w3.org/2000/svg" width="23.344"
+                    height="21.548" viewBox="0 0 23.344 21.548">
+                    <path id="bxs-right-arrow-alt" d="M29.344,16.774,16.774,6v8.978H6V18.57H16.774v8.978Z"
+                        transform="translate(-6 -6)" fill="#ef2218" />
+                </svg>
+            </a>
+            <div class="social-links">
+                <a href="mailto:sales@koimarket.com" aria-label="Email Us" target="_blank" rel="noopener">
+                    <svg id="Group_19" data-name="Group 19" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.527 17.154">
+                        <path id="Path_109" data-name="Path 109" d="M53.45,18.476,60.2,25.317V13.7Z"
+                            transform="translate(-35.674 -9.144)" />
+                        <path id="Path_110" data-name="Path 110" d="M0,25.316l6.748-6.841L0,13.7Z"
+                            transform="translate(0 -9.144)" />
+                        <g id="Group_18" data-name="Group 18">
+                            <g id="Group_17" data-name="Group 17" clip-path="url(#clip-path)">
+                                <path id="Path_111" data-name="Path 111"
+                                    d="M14.56,33.307a.666.666,0,0,1-.788,0L9.777,30.48,2.85,37.5H25.464L18.55,30.48Z"
+                                    transform="translate(-1.902 -20.343)" />
+                                <path id="Path_112" data-name="Path 112"
+                                    d="M0,0V2.887L7.7,8.354l.565.4.565.4,3.419,2.418,3.432-2.431.562-.4.565-.4,7.716-5.467V0Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/KoiMarketAquaticGardens" target="_blank" rel="noopener"
+                    aria-label="Follow us on Facebook">
+                    <svg id="Group_8" data-name="Group 8" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21.996 22.001">
+                        <g id="Group_7" data-name="Group 7" transform="translate(0 0)" clip-path="url(#clip-path)">
+                            <path id="Path_102" data-name="Path 102"
+                                d="M20.789,0H1.212A1.212,1.212,0,0,0,0,1.212V20.789A1.212,1.212,0,0,0,1.212,22H11.753v-8.52H8.87V10.167h2.868V7.711c0-2.84,1.732-4.388,4.26-4.388a22.8,22.8,0,0,1,2.561.133V6.423H16.8c-1.382,0-1.647.658-1.647,1.619v2.121h3.29l-.431,3.313h-2.84V22h5.609A1.212,1.212,0,0,0,22,20.784V1.212A1.212,1.212,0,0,0,20.789,0"
+                                transform="translate(0 0)" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/KoiMarket" target="_blank" rel="noopener"
+                    aria-label="Follow us on Twitter">
+                    <svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.545 18.309">
+                        <g id="Group_9" data-name="Group 9" transform="translate(0 0)" clip-path="url(#clip-path)">
+                            <path id="Path_103" data-name="Path 103"
+                                d="M22.545,2.168A9.393,9.393,0,0,1,19.89,2.9,4.62,4.62,0,0,0,21.92.336a9.214,9.214,0,0,1-2.935,1.122A4.625,4.625,0,0,0,10.991,4.62a4.83,4.83,0,0,0,.118,1.056A13.149,13.149,0,0,1,1.576.871,4.624,4.624,0,0,0,3,7.024,4.627,4.627,0,0,1,.9,6.447v.062a4.625,4.625,0,0,0,3.711,4.53,4.711,4.711,0,0,1-2.087.08A4.62,4.62,0,0,0,6.84,14.328,9.28,9.28,0,0,1,1.1,16.3,9.434,9.434,0,0,1,0,16.231a13.04,13.04,0,0,0,7.1,2.078A13.052,13.052,0,0,0,20.254,5.159v-.6a9.379,9.379,0,0,0,2.291-2.39"
+                                transform="translate(0 0)" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/koimarketaquaticgardens/" target="_blank" rel="noopener">
+                    <svg id="Group_12" data-name="Group 12" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.611 22.569">
+                        <g id="Group_11" data-name="Group 11" transform="translate(0 0)" clip-path="url(#clip-path)">
+                            <path id="Path_104" data-name="Path 104"
+                                d="M11.284,2.054c3.006,0,3.365,0,4.554.066a6.122,6.122,0,0,1,2.092.388,3.744,3.744,0,0,1,2.135,2.135,6.122,6.122,0,0,1,.388,2.092c.057,1.188.066,1.548.066,4.554s0,3.365-.066,4.554a6.122,6.122,0,0,1-.388,2.092A3.744,3.744,0,0,1,17.93,20.07a6.122,6.122,0,0,1-2.092.388c-1.188.057-1.543.066-4.554.066s-3.365,0-4.554-.066a6.122,6.122,0,0,1-2.092-.388A3.745,3.745,0,0,1,2.528,17.93a6.122,6.122,0,0,1-.388-2.092c-.057-1.188-.066-1.548-.066-4.554s0-3.365.066-4.554a6.122,6.122,0,0,1,.388-2.092A3.743,3.743,0,0,1,4.639,2.528a6.122,6.122,0,0,1,2.092-.388c1.188-.057,1.548-.066,4.554-.066m0-2.031c-3.058,0-3.441,0-4.643.066A8.277,8.277,0,0,0,3.905.634,5.726,5.726,0,0,0,.592,3.948,8.277,8.277,0,0,0,.066,6.684C.014,7.886,0,8.269,0,11.327s0,3.441.066,4.643a8.279,8.279,0,0,0,.568,2.693,5.726,5.726,0,0,0,3.313,3.313,8.277,8.277,0,0,0,2.736.525c1.2.052,1.586.066,4.643.066s3.441,0,4.643-.066a8.277,8.277,0,0,0,2.736-.525,5.726,5.726,0,0,0,3.313-3.313,8.277,8.277,0,0,0,.525-2.736c.052-1.2.066-1.586.066-4.643s0-3.441-.066-4.643a8.277,8.277,0,0,0-.525-2.736A5.726,5.726,0,0,0,18.706.592,8.277,8.277,0,0,0,15.97.066C14.768.014,14.385,0,11.327,0Z"
+                                transform="translate(0 0)" />
+                            <path id="Path_105" data-name="Path 105"
+                                d="M17.4,11.62A5.784,5.784,0,1,0,23.188,17.4,5.784,5.784,0,0,0,17.4,11.62Zm0,9.538A3.754,3.754,0,1,1,21.158,17.4,3.753,3.753,0,0,1,17.4,21.158"
+                                transform="translate(-6.12 -6.12)" />
+                            <path id="Path_106" data-name="Path 106"
+                                d="M35.034,8.28A1.354,1.354,0,1,1,33.68,9.634,1.353,1.353,0,0,1,35.034,8.28"
+                                transform="translate(-17.738 -4.361)" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.pinterest.com/KoiMarket/" target="_blank" rel="noopener"
+                    aria-label="Follow us on Pinterest">
+                    <svg id="Group_14" data-name="Group 14" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.428 22.525">
+                        <g id="Group_13" data-name="Group 13" transform="translate(0 0)" clip-path="url(#clip-path)">
+                            <path id="Path_107" data-name="Path 107"
+                                d="M17.428,7.412c0,5.079-2.84,8.87-6.982,8.87a3.672,3.672,0,0,1-3.162-1.614s-.753,2.982-.909,3.559a13.993,13.993,0,0,1-2.334,4.236.175.175,0,0,1-.3-.076,14.068,14.068,0,0,1,.043-4.918c.246-1.051,1.661-7.053,1.661-7.053a5,5,0,0,1-.412-2.05c0-1.893,1.112-3.346,2.494-3.346A1.731,1.731,0,0,1,9.273,6.963c0,1.183-.753,2.954-1.141,4.591a2,2,0,0,0,2.04,2.494c2.452,0,4.1-3.148,4.1-6.882,0-2.84-1.893-4.956-5.382-4.956a6.129,6.129,0,0,0-6.376,6.2,3.735,3.735,0,0,0,.857,2.537.63.63,0,0,1,.185.724c-.062.237-.2.809-.265,1.037a.473.473,0,0,1-.569.353.522.522,0,0,1-.08-.027C.843,12.288,0,10.309,0,8.085,0,4.407,3.1,0,9.249,0c4.932,0,8.179,3.574,8.179,7.412"
+                                transform="translate(0 0)" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCnulz6Gg7Rbqk5rPItj8Qbw?" target="_blank" rel="noopener"
+                    aria-label="Follow us on Youtube">
+                    <svg id="Group_16" data-name="Group 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.531 15.431">
+                        <g id="Group_15" data-name="Group 15" transform="translate(0 0)" clip-path="url(#clip-path)">
+                            <path id="Path_108" data-name="Path 108"
+                                d="M22.531,12.212a3.228,3.228,0,0,1-3.219,3.219H3.219A3.228,3.228,0,0,1,0,12.212V3.219A3.228,3.228,0,0,1,3.219,0H19.312a3.228,3.228,0,0,1,3.219,3.219ZM8.937,10.47l6.092-3.152L8.937,4.165Z"
+                                transform="translate(0 0)" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="col2">
+            <p class="title">Explore</p>
+            <a href="/home/">home</a>
+            <a href="/faq/">Faq</a>
+            <a href="/about/">About</a>
+            <a href="/resources/">Resources</a>
+        </div>
+        <div class="col3">
+            <p class="title">Services</p>
+            <a href="/shop/">koi for sale</a>
+            <a href="/supplies/">pond supplies</a>
+            <a href="/maintenance/">pond maintenance</a>
+            <a href="/wholesale/">wholesale</a>
+        </div>
+        <svg class="bg-2" xmlns="http://www.w3.org/2000/svg" width="426.395" height="176.798"
+            viewBox="0 0 426.395 176.798">
+            <path id="Path_208" data-name="Path 208" d="M343.673,0l82.722,176.8H0Z"
+                transform="translate(426.395 176.798) rotate(180)" fill="#fff" opacity="0.097" />
+        </svg>
+
+        <div class="col4">
+            <p class="title">latest news</p>
+            <img />
+            <p>2019 Father’s Day Japanese Koi Weekend Madness Sale | June 12</p>
+            <img />
+            <p>2017 Yoshikigoi Koi Buying Trip | September 17</p>
+        </div>
+    </div>
+    <div class="copyright">Copyright © <a href="/privacy-policy/">Privacy Policy</a> | <a
+            href="/accessibility-statement/">Accessibility Statement</a><span>Marketing Services by <a
+                href="https://www.fuelwebmarketing.com/" style="text-decoration:none;" target="_blank"
+                rel="noopener">Fuel Web Marketing</a></span>
+    </div>
+</footer>
+
+</html>
+</footer>
+
+</html>

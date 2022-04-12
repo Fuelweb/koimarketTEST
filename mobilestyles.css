@@ -1,0 +1,56 @@
+/*****************
+  MOBILE STYLES
+*****************/
+@media (max-width:850px) {
+  body {padding-top: 27vw;}
+  .sidebar {display:none;}
+  .main-content-container {display: block;width: 100%;margin:0 auto;}
+  .copyright {height: 18vw;font-size: 3.5vw;padding-top: 5vw;}
+  .copyright span {float:left;margin-top:3vw;}
+  .copyright img {width:16vw;}
+  nav.desktop-nav{display:none}
+  nav.mobile-header{display:block}
+  header.header-post{display:block}
+  body{padding-top:21.4vw}
+  p, a, li {font-size: 4.8vw;}
+  h1 {font-size: 6vw;}
+  h2 {font-size: 5vw;}
+  h3, h4 {font-size: 4.8vw;}
+ 
+  /*****************
+  HOMEPAGE
+*****************/
+
+
+
+
+/****************
+MOBILE NAV
+****************/
+nav.mobile-header{display:block;margin-bottom:0px;position:absolute;width:100%;top:0vw;z-index:9;height:13vw;}
+.mobile-nav a.logo-left{border-bottom:0px;margin-top:0;margin-bottom:0;padding-bottom:0;padding-left:0;display: inline-block;}
+section#logo img{width:35vw;height:auto;position:relative;bottom:1vw}
+.pull-right{padding-top:2vw;display:inline-block;float:right;width:auto;height:7vw;}
+.phone{display:inline-block;height:10vw;width:7vw;width:12vw;vertical-align:top}
+.mobile-nav .phone a{margin-top:.8vw;padding-top:0;border-bottom:0px;padding-left:0;}
+.phone i{font-size:52px;color:black;font-size:52px;color:black;padding:12px 0 0 53px}
+.mobile-nav-btn{display:inline-block;width:11vw;height:11vw}
+div.mobile-nav-btn div.nav-dot{height:2vw;width:2vw;border-radius:4px;background-color:#fff;margin:.6vw auto;opacity:1;transition:opacity .3s ease}
+div.mobile-nav-btn div.nav-dot:first-child{margin:1vw auto 0}
+div.mobile-nav-btn .mobile-dotnav-close{color:#fff;top:.5vw;position:absolute;width:6vw;right:3vw;opacity:0}
+div.mobile-nav-btn:hover div.mobile-nav{display:block}
+div.mobile-nav{display:block;color:#fff;vertical-align:top;position:absolute;background:#0c77b6;padding:0px;right:0;z-index:98;overflow:scroll;height:auto;overflow:scroll;transition:top .3s ease;width:63%;top:-115vw;max-height:80vh;overflow-Y:scroll;}
+div.mobile-nav ul{list-style:none;padding:0 30px}
+div.mobile-nav ul li{margin:20px auto;font-size:17px}
+div.mobile-nav ul li a{border-bottom:1px solid #e6e6e6;width:100%;display:inline-block;padding-bottom:9px}
+.mobile-nav a{color:#fff;font-size:4vw;text-decoration:none;display:block;margin:3.5vw 3.5vw;padding:2vw 0 4vw;border-bottom:1px solid #e1e1e1;padding-left:5vw;}
+nav.mobile-nav{height:13vw;width:100%;background-color:transparent;position:relative;z-index:9;}
+.mobile-nav-practice-areas-menu{display:none}
+div.mobile-nav-screen{display:block;width:100vw;height:100vh;position:absolute;top:0;left:0}
+nav > div.sidebar-nav{position:relative;width:95%;background-color:#0c77b6;color:white;height:auto;max-height:78vh;top:-90vh;z-index:5;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);border-bottom:0;transition:top .3s ease;padding-left:5%;overflow-y:scroll;padding-top:6vw;padding-bottom:5vw}
+header .sidebar-nav ul{padding-left:3vw;margin-top:0;margin-bottom:0}
+header .sidebar-nav li{list-style:none;margin:3vw 0;padding-bottom:.8vw}
+.sidebar-nav a{color:white;text-decoration:none;font-size:4vw;line-height:6vw;display:block}
+.pull-right svg {box-shadow: 0 7px 8px rgba(68, 65, 65, 0.1), 0 8px 8px rgba(76, 70, 70, 0.1);}
+ .mobile-nav img {height:21vw;}
+}
