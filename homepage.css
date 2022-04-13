@@ -365,12 +365,12 @@ a:hover {
     transition: .5s;
 }
 .section-one .form-container {
-    position: absolute;
+    position: relative;
     background: #383838;
     width: 27vw;
     height: 41vw;
     margin-top: -22vw;
-    right: 8vw;
+    float: right;
     border-radius: 6px;
 }
 .section-one .form-container .top {
@@ -555,7 +555,7 @@ a:hover {
     height: 25vw;
 }
 .section-four .koi-image {
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     width: 39vw;
     height: auto;
@@ -741,13 +741,13 @@ a:hover {
 .section-six .boxes .box .info-box .fish-description {
     display: inline-block;
     background-color: #fff;
-    width: 7vw;
+    width: 8vw;
     color: #000;
     height: 6.5vw;
     position: relative;
     top: -1vw;
     text-transform: uppercase;
-    left: 1vw;
+    left: 0vw;
 }
 
 .section-six .boxes .box .info-box .fish-description p {
@@ -766,11 +766,11 @@ a:hover {
 
 .section-six .boxes .box .info-box .price {
     display: inline-block;
-    width: 9vw;
+    width: 6vw;
     vertical-align: top;
     text-align: left;
     position: relative;
-    left: 2vw;
+    left: 0vw;
 }
 
 .section-six .boxes .box .info-box .price p:last-of-type {
@@ -895,12 +895,12 @@ a:hover {
 .section-eight .boxes .box .info-box .fish-description {
     display: inline-block;
     background-color: #fff;
-    width: 7vw;
+    width: 8vw;
     height: 6.5vw;
     position: relative;
     top: -1vw;
     text-transform: uppercase;
-    left: 1vw;
+    left: 0vw;
 }
 
 .section-eight .boxes .box .info-box .fish-description p {
@@ -920,11 +920,11 @@ a:hover {
 
 .section-eight .boxes .box .info-box .price {
     display: inline-block;
-    width: 9vw;
+    width: 6vw;
     vertical-align: top;
     text-align: left;
     position: relative;
-    left:2vw;
+    left:0vw;
 }
 
 .section-eight .boxes .box .info-box .price p:last-of-type {
@@ -1071,6 +1071,7 @@ a:hover {
     height: 32vw;
     top: -16vw;
     right: 2vw;
+    z-index: 1;
 }
 
 .section-twelve {

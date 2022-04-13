@@ -319,12 +319,18 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .titlebar .titlebar-header {
     font-family: 'Fjalla One';
     font-size: 2.9vw;
-    padding-top: 2.4vw;
+    margin-bottom:0;
+}
+
+.titlebar p {
+    font-size: 1.83vw;
+    margin-top:0;
 }
 
 .title, .subtitle {
@@ -604,6 +610,13 @@ ul li {
     font-size: 2.1vw;
     padding-bottom: 2vw;
 }
+.contact-section-one .jotform-container iframe {
+    width: 100vw;
+    height: 53vw !important;
+    border: 0;
+    overflow: hidden;
+    padding-top: 2vw;
+}
 
 .contact-section-one .right .top a {
     text-decoration: none;
@@ -825,13 +838,13 @@ ul li {
 .koi-sale-section-three .boxes .box .info-box .fish-description {
     display: inline-block;
     background-color: #fff;
-    width: 7vw;
+    width: 8vw;
     color: #000;
     height: 6.5vw;
     position: relative;
     top: -1vw;
     text-transform: uppercase;
-    left: 1.5vw;
+    left: 0vw;
 }
 
 .koi-sale-section-three .boxes .box .info-box .fish-description p {
@@ -853,16 +866,15 @@ ul li {
 
 .koi-sale-section-three .boxes .box .info-box .price {
     display: inline-block;
-    width: 9vw;
+    width: 6vw;
     vertical-align: top;
     text-align: left;
     position: relative;
-    left: 2vw;
+    left: 0vw;
 }
 
 .koi-sale-section-three .boxes .box .info-box .price p:last-of-type {
     font-size: 1.3vw;
-    margin-top: -.5vw;
 }
 
 .koi-sale-section-three .bg-1 {
@@ -985,13 +997,13 @@ ul li {
 .koi-product-section-four .boxes .box .info-box .fish-description {
     display: inline-block;
     background-color: #fff;
-    width: 7vw;
+    width: 8vw;
     color: #000;
     height: 6.5vw;
     position: relative;
     top: -1vw;
     text-transform: uppercase;
-    left: 1.5vw;
+    left: 0vw;
 }
 
 .koi-product-section-four .boxes .box .info-box .fish-description p {
@@ -1013,16 +1025,15 @@ ul li {
 
 .koi-product-section-four .boxes .box .info-box .price {
     display: inline-block;
-    width: 9vw;
+    width: 6vw;
     vertical-align: top;
     text-align: left;
     position: relative;
-    left: 2vw;
+    left: 0vw;
 }
 
 .koi-product-section-four .boxes .box .info-box .price p:last-of-type {
     font-size: 1.3vw;
-    margin-top: -.5vw;
 }
 
 
@@ -1091,7 +1102,7 @@ ul li {
 .koi-supplies-section-three {
     background-color: #222222;
     padding: 3vw 3vw 5vw;
-    margin: 5vw 7vw;
+    margin: 5vw 7vw 7vw;
 }
 
 .koi-supplies-section-three .subtitle {
@@ -1209,6 +1220,7 @@ ul li {
     padding: 3vw;
     width: 25vw;
     text-align: left;
+    overflow-x: hidden;
 }
 .sidebar a {
     display: block;
@@ -1217,23 +1229,32 @@ ul li {
     padding: .5vw 0;
 }
 
-.sidebar .subtitle::after,
-.sidebar .uppercase::after {
+.sidebar .sidebar-title {
+    text-transform: uppercase;
+}
+
+.sidebar .dropdown-container::after,
+.sidebar .subtitle::after {
     border-bottom: 1px solid #fff;
     content: "";
     display: block;
     width: 124%;
     left: -3vw;
     position: relative;
-    padding-top: 2.6vw;
+    padding-bottom: 2.3vw;
 }
 
-.sidebar .uppercase::after {
-    padding-bottom: 1.7vw;
+.sidebar .sidebar-title::after, 
+.sidebar .dropdown-container::after {
     padding-top:0;
+    padding-bottom: 0;
 }
 
-.sidebar .uppercase:last-child::after {
+.sidebar .sidebar-title:last-child::after {
+    display: none;
+}
+
+.sidebar .dropdown {
     display: none;
 }
 .sidebar .dropdown {
@@ -1294,11 +1315,11 @@ ul li {
     vertical-align: top;
     width: 43vw;
     line-height: 1.9;
-    padding-left:5vw;
+    padding-left:4.7vw;
 }
 
 .koi-shipping-section-two .right .subtitle {
-    font-family: 1.8vw;
+    font-size: 1.8vw;
     margin-bottom: -1vw;
 }
 
@@ -1311,7 +1332,7 @@ ul li {
 }
 
                 /**************************
-                       POND MAINTENANCE
+                POND MAINTENANCE SPECIFIC
                 ***************************/
 
 .koi-maintenance-section-one {
@@ -1377,7 +1398,7 @@ ul li {
 .koi-maintenance-section-two .text-box {
     text-align: center;
     margin: 2vw 7vw;
-    padding: 4vw 4vw 2vw;
+    padding: 4vw 5vw 2vw;
     background-color: #222222;
 }
 
@@ -1392,56 +1413,63 @@ ul li {
 
 .koi-maintenance-section-two .text-box .left {
     text-align: left;
-    width: 36vw;
+    width: 35vw;
     display: inline-block;
-    line-height: 1.9;
+    line-height: 1.8;
     padding-top:1.5vw;
 } 
 
 .koi-maintenance-section-two .text-box .left .box-title {
     font-size: 1.9vw;
+    margin-bottom: 0;
 }
 
 .koi-maintenance-section-two .text-box .right {
     text-align: left;
-    width: 36vw;
+    width: 35vw;
     display: inline-block;
     vertical-align: top;
-    line-height: 1.9;
-    padding-left: 3vw;
+    line-height: 1.8;
+    padding-left: 5vw;
     padding-top:7vw;
 
 }
 
 .koi-maintenance-section-three {
     text-align: center;
-    margin: 2vw 7vw;
-    padding: 4vw 4vw 2vw;
+    margin: 4vw 7vw;
+    padding: 5vw 4vw 3vw;
     background-color: #222222;
 }
 
 .koi-maintenance-section-three .title {
     font-size: 1.8vw;
+    padding-bottom:1vw;
 }
 
 .koi-maintenance-section-three .subtitle {
     font-size: 1.3vw;
-    padding-top: 2vw;
+    padding-top: 1vw;
 }
 
 .koi-maintenance-section-three .left {
     text-align: left;
     line-height: 1.9;
-    padding-top: 1.5vw;
+    padding-top: 4vw;
     padding-left: 1vw;
+}
+
+.koi-maintenance-section-three .left p {
+    margin:0;
 }
 
 .koi-maintenance-section-three .left .box-title {
     font-size: 1.9vw;
+    margin-bottom:0;
 }
 .koi-maintenance-section-four {
     text-align: center;
-    padding: 4vw 5vw 3vw;
+    padding: 5vw 5vw 2vw;
 }
 .koi-maintenance-section-four .boxes {
     display: flex;
@@ -1462,7 +1490,7 @@ ul li {
 
 .koi-maintenance-section-five {
     text-align: center;
-    padding: 0vw 13vw 4vw;
+    padding: 1vw 10vw 8vw;
 }
 
 .koi-maintenance-section-five .divider-text p {
@@ -1471,13 +1499,365 @@ ul li {
 
 .koi-maintenance-section-five p{
     font-size: 1.2vw;
-    line-height: 1.9;
+    line-height: 1.7;
 }
 
 .koi-maintenance-section-five .divider-text p::before,
-.divider-text p::after {
+.koi-maintenance-section-five .divider-text p::after {
     width: 34vw;
 }
+
+.koi-maintenance-section-five .button.red {
+    position: relative;
+    top:3vw;
+}
+
+                /**************************
+                POND MAINTENANCE OVERVIEW
+                ***************************/
+
+
+.pond-maintenance-overview-section-one {
+    background-color: #000;
+    padding: 3.5vw 5vw 4vw;
+    position: relative;
+}
+
+.pond-maintenance-overview-section-one .bg-1 {
+    position: absolute;
+    top: 0;
+}
+
+.pond-maintenance-overview-section-one .column {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.pond-maintenance-overview-section-one .column svg {
+    display: inline-block;
+    vertical-align: top;
+    height: 3.5vw;
+    width: 3.5vw;
+    position: relative;
+    top: 1vw;
+}
+
+.pond-maintenance-overview-section-one .column .text-box {
+    display: inline-block;
+    width: 20vw;
+    padding-left: 1vw;
+}
+
+.pond-maintenance-overview-section-one .column a.text-box {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.pond-maintenance-overview-section-one .column.two {
+    padding-left: 7vw;
+}
+
+.pond-maintenance-overview-section-one .column.three {
+    padding-left: 7vw;
+}
+
+.pond-maintenance-overview-section-one .column .text-box .box-title {
+    text-transform: uppercase;
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+
+.pond-maintenance-overview-section-one .column a.text-box p {
+    font-size: 1vw;
+    margin-top: 0;
+    line-height: 1.5;
+    letter-spacing: .01vw;
+}
+
+.pond-maintenance-overview-section-one .column a.text-box svg {
+    height: 1vw;
+    width: 1vw;
+    float: right;
+    fill: #EF2218;
+    transition: .5s;
+}
+
+.pond-maintenance-overview-section-one .column a.text-box:hover {
+    color: #D8FF00;
+}
+
+.pond-maintenance-overview-section-one .column a.text-box:hover svg {
+    fill: #D8FF00;
+}
+
+.pond-maintenance-overview-section-two .boxes {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vw;
+    flex-wrap: wrap;
+}
+
+.pond-maintenance-overview-section-two .boxes .box .title {
+    font-size: 1.9vw;
+    margin-bottom: .5vw;
+    padding-left: 1vw;
+}
+
+.pond-maintenance-overview-section-two .boxes .box .title::after {
+    border-bottom: 1px solid #fff;
+    width: 90%;
+    text-align: right;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: .5vw;
+}
+
+.pond-maintenance-overview-section-two .boxes .box svg {
+    fill: #EF2218;
+    padding-left: .2vw;
+}
+
+.pond-maintenance-overview-section-two .boxes .box .button {
+    color: #EF2218;
+    margin-left: -.6vw;
+    position: relative;
+    transition: .5s;
+    top:1.5vw;
+}
+
+.pond-maintenance-overview-section-two .boxes .box .button:hover {
+    color: #D8FF00;
+}
+
+.pond-maintenance-overview-section-two .boxes .box .button:hover svg {
+    fill: #D8FF00;
+}
+
+.pond-maintenance-overview-section-two .boxes .box {
+    position: relative;
+    width: 19vw;
+    height: 8vw;
+    overflow: hidden;
+    padding: 4vw 1vw 2vw;
+    margin: 1vw;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.pond-maintenance-overview-section-two .boxes .box picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.pond-maintenance-overview-section-two .boxes .box picture img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000 0%, rgba(84, 84, 84, 0) 100%);
+    opacity: 0.55;
+    object-fit: cover;
+}
+.pond-maintenance-overview-section-three {
+    padding: 1vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.5vw;
+    position: relative;
+}
+
+.pond-maintenance-overview-section-three .title {
+    margin-bottom: 0;
+    font-size: 2.7vw;
+    text-transform: uppercase;
+}
+
+.pond-maintenance-overview-section-three p {
+    color: #fff;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    margin-top: 0;
+    position: relative;
+}
+
+.pond-maintenance-overview-section-three .button {
+    position: relative;
+}
+
+
+                /**************************
+                            FAQ
+                ***************************/
+.faq-section-one {
+    padding: 4vw 11vw 3vw;
+    line-height: 1.8;
+}
+.faq-section-one .faq-box::after {
+    border-bottom: 1px solid #fff;
+    display: block;
+    width: 111%;
+    content: "";
+    margin-left: -4vw;
+    padding-top: 1vw;
+}
+
+.faq-section-one .faq-box .box-title {
+    font-size: 1.94vw;
+    font-weight: 700;
+    margin-bottom:0;
+}
+
+.faq-section-one .faq-box p {
+    font-size: 1.2vw;
+}
+
+.faq-section-two {
+    padding: 2vw 7vw 4vw;
+}
+.faq-section-two p {
+    display: inline-block;
+}
+.faq-section-two .button.red { 
+    display: inline-block;
+    position: relative;
+    bottom: .5vw;
+    left:28vw;
+}
+
+                /**************************
+                    POND CONSTRUCTION
+                ***************************/
+.pond-construction-section-one {
+    background-color: #222222;
+    margin: 8vw 4vw 5vw;
+    padding: 3vw 4vw 4vw;
+    position: relative;
+
+}
+
+.pond-construction-section-one .left {
+    display: inline-block;
+    width: 38vw;
+    line-height: 1.6;
+}
+
+.pond-construction-section-one .left p {
+    font-size: 1.21vw;
+}
+
+.pond-construction-section-one .left p.title {
+    margin-top: -1vw;
+    font-size: 2.8vw;
+}
+
+.pond-construction-section-one .left p.subtitle {
+    font-size: 1.8vw;
+}
+
+.pond-construction-section-one .left .button.red {
+    position: relative;
+    top:2vw;
+}
+
+.pond-construction-section-one .right {
+    display: inline-block;
+    position: absolute;
+    top: -3vw;
+    right: 6vw;
+    width: 42vw;
+}
+
+.pond-construction-section-one .right p {
+    font-size: 1.3vw;
+    margin-left: 2vw;
+}
+.pond-construction-section-one .right img.video {
+    width: 44vw;
+    height: auto;
+    display: block;
+    margin-bottom: 3vw;
+    margin-left: 2vw;
+    border-radius: 6px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.81);
+}
+
+.pond-construction-section-one .right ul {
+    width: 45vw;
+    height: auto;
+    display: inline-block;
+    margin-top: 1vw;
+}
+.pond-construction-section-one .right li {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    line-height: 2.4vw;
+    font-size: 1.3vw;
+}
+.pond-construction-section-one .right li::before {
+    content: "•";
+    display: inline-block;
+    padding-right: .5vw;
+}
+.pond-construction-section-two .divider-text p::before,
+.pond-construction-section-two .divider-text p::after {
+    width: 37vw;
+}
+
+.pond-construction-section-two .gallery {
+    column-count: 4;
+    padding: 4vw 4vw 1vw;
+    width: 88vw;
+    margin: 0 auto;
+}
+.pond-construction-section-two .gallery picture {
+    height: 20vw;
+    width: 21vw;
+    position: relative;
+    display: block;
+    margin-bottom: 1vw;
+}
+
+
+.pond-construction-section-two .gallery picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+.pond-construction-section-three {
+    padding: 4vw 14vw;
+}
+
+.pond-construction-section-three .left {
+    display: inline-block;
+}
+
+.pond-construction-section-three .title {
+    font-size: 2.86vw;
+}
+
+.pond-construction-section-three .subtitle{
+    font-size: 1.3vw;
+}
+
+.pond-construction-section-three .button.red {
+    display: inline-block;
+    position: relative;
+    left: 10vw;
+    bottom: 2vw;
+}
+
 
                 /**************************
                           FOOTER
@@ -1592,7 +1972,7 @@ footer .col1 a {
 footer col1 > a:nth-child(4) {
     color: #EF2218;
 }
-.col1 > a:nth-child(4) > svg:nth-child(1) {
+footer .col1 > a:nth-child(4) > svg:nth-child(1) {
     height: .8vw;
 }
 footer .col1 .social-links a {
