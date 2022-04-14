@@ -15,19 +15,19 @@ nav.mobile-nav {
 @font-face{
 	font-family:'Karla';
 	font-display:swap;
-	src:url('assets/fonts/Karla/Static/Karla-Regular.ttf');
+	src:url('assets/fonts/Karla/static/Karla-Regular.ttf');
 	font-weight: 400;
 }
 @font-face{
 	font-family:'Karla';
 	font-display:swap;
-	src:url('assets/fonts/Karla/Static/Karla-Bold.ttf');
+	src:url('assets/fonts/Karla/static/Karla-Bold.ttf');
 	font-weight: 700;
 }
 @font-face{
 	font-family:'Karla';
 	font-display:swap;
-	src:url('assets/fonts/Karla/Static/Karla-Medium.ttf');
+	src:url('assets/fonts/Karla/static/Karla-Medium.ttf');
 	font-weight: 500;
 }
 .green {
