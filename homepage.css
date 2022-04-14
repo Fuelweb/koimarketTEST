@@ -1335,9 +1335,11 @@ footer .col4 img {
 
 footer .col4 a {
     display: inline-block;
-    width: 21vw;
+    width: 16vw;
     text-transform: capitalize;
     padding-left: 1vw;
+    position: relative;
+    top: -1vw;
 }
 
 footer .col4 .article-link {

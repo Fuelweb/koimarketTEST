@@ -719,6 +719,7 @@ ul li {
     margin-top: 0;
     line-height: 1.5;
     letter-spacing: .01vw;
+    color: inherit;
 }
 
 .koi-sale-section-one .column .text-box svg {
@@ -1122,15 +1123,11 @@ ul li {
     left: 1vw;
     top: 1vw;
 }
-.kpond-supplies-section-three .button.red {
+.pond-supplies-section-three .button.red {
     position: relative;
     top: 1vw;
 
 }
-
-                /**************************
-                        POND SUPPLIES
-                ***************************/
 
 .pond-supplies-section-two .left {
     padding-left: 6.7vw;
@@ -1148,6 +1145,8 @@ ul li {
 .pond-supplies-section-two .left .boxes .box {
     width: 17vw;
     margin-bottom: 3vw;
+    height: 30vw;
+    position: relative;
 }
 
 .pond-supplies-section-two .left .boxes {
@@ -1171,18 +1170,22 @@ ul li {
     padding: .2vw 0;
 }
 
-.box .info-box .points {
+.pond-supplies-section-two .left .boxes .bottom-half {
+    bottom: 0;
+    position: absolute;
+}
+.box .bottom-half .points {
     font-size: 1vw;
     padding-top: 2.9vw;
 }
 
-.box .info-box .price {
+.box .bottom-half .price {
     color: #fff;
     font-size: 1.25vw;
     padding-top:.7vw;
 }
 
-.box .button.red {
+.box .bottom-half .button.red {
     position: relative;
     top: 1vw;
 }
@@ -1261,6 +1264,8 @@ ul li {
     transition: ease .7s;
     margin-left: 1.5vw;
     margin-top: -.9vw;
+    display: block;
+    overflow: hidden;
 }
 .sidebar .uppercase {
     font-size: 1.28vw;
@@ -1272,7 +1277,7 @@ input,
 ul.dropdown {
     display: none;
     list-style-type: none;
-    transition: ease .7s;
+    transition: ease .33s;
 }
 
 /*position the label*/
@@ -1285,6 +1290,15 @@ label {
 /*show the submenu when input is checked*/
 input:checked~ul.dropdown {
     display: block;
+}
+
+.sidebar .dropdown li:first-child {
+    margin-top: -45vw;
+    transition: margin-top .5s ease;
+}
+
+.sidebar input:checked~ul.dropdown li:first-child {
+    margin-top: 0vw;
 }
 
 
@@ -1597,6 +1611,7 @@ input:checked~ul.dropdown {
     margin-top: 0;
     line-height: 1.5;
     letter-spacing: .01vw;
+    color: inherit;
 }
 
 .pond-maintenance-overview-section-one .column a.text-box svg {
@@ -2043,9 +2058,11 @@ footer .col4 img {
 
 footer .col4 a {
     display: inline-block;
-    width: 21vw;
+    width: 16vw;
     text-transform: capitalize;
     padding-left: 1vw;
+    position: relative;
+    top: -1vw;
 }
 
 footer .col4 .article-link {
