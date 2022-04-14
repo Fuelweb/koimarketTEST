@@ -1273,7 +1273,7 @@ footer .col1 .social-links svg:hover {
 footer .col2 {
     display: inline-block;
     vertical-align: top;
-    width: 14vw;
+    width: 13vw;
 }
 footer .col2 a {
     display: block;
@@ -1283,7 +1283,7 @@ footer .col2 a {
 footer .col3 {
     vertical-align: top;
     display: inline-block;
-    width: 16vw;
+    width: 15vw;
 }
 footer .col3 a {
     display: block;
@@ -1293,14 +1293,28 @@ footer .col3 a {
 footer .col4 {
     vertical-align: top;
     display: inline-block;
-    width: 25vw;
+    width: 27vw;
+    position: relative;
+}
+
+footer .col4 img {
+    display: inline-block;
+    height: 3vw;
+    width: 3vw;
 }
 
 footer .col4 a {
-    display: block;
-    width: 7vw;
+    display: inline-block;
+    width: 21vw;
     text-transform: capitalize;
+    padding-left: 2vw;
 }
+
+footer .col4 .article-link {
+    display: block;
+    padding-bottom: 1vw;
+}
+
 footer .top {
     padding: 3vw 8vw;
 }
