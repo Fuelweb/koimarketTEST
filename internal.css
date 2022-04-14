@@ -2,6 +2,8 @@
 body {
     margin:0;
     background-color: #000;
+    width: 100vw;
+    overflow-x: hidden;
 }
 nav.mobile-nav {
     display: none;
@@ -1038,30 +1040,30 @@ ul li {
 
 
                 /**************************
-                        KOI SUPPLIES
+                        POND SUPPLIES
                 ***************************/
-.koi-supplies-section-one {
+.pond-supplies-section-one {
     text-align: center;
     position: relative;
     padding: 5vw 5vw 1vw;
 }
-.koi-supplies-section-one .title {
+.pond-supplies-section-one .title {
     padding-bottom: 1vw;
 }
-.koi-supplies-section-one .bg-1 {
+.pond-supplies-section-one .bg-1 {
     position: absolute;
     top: -1vw;
     z-index: -1;
     left: 11vw;
     width: 28vw;
 }
-.koi-supplies-section-one .left {
+.pond-supplies-section-one .left {
     display: inline-block;
     width: 42vw;
     text-align: left;
     line-height: 1.9;
 }
-.koi-supplies-section-one .right {
+.pond-supplies-section-one .right {
     display: inline-block;
     width: 42vw;
     text-align: left;
@@ -1069,58 +1071,58 @@ ul li {
     vertical-align: top;
     padding-left: 4vw;
 }
-.koi-supplies-section-one .right .button.red {
+.pond-supplies-section-one .right .button.red {
     color: #D8FF00;
     top:2vw;
     position: relative;
 }
-.koi-supplies-section-one .right .button.red:hover {
+.pond-supplies-section-one .right .button.red:hover {
     color: #000;
 }
 
-.koi-supplies-section-one .right .button.red svg {
+.pond-supplies-section-one .right .button.red svg {
     fill:#D8FF00;
 }
 
-.koi-supplies-section-one .right .button.red:hover svg {
+.pond-supplies-section-one .right .button.red:hover svg {
     fill: #000;
 }
-.koi-supplies-section-two {
+.pond-supplies-section-two {
     padding-bottom: 8vw;
 }
-.koi-supplies-section-two .divider-text {
+.pond-supplies-section-two .divider-text {
     text-align: left;
     padding-left: 6.5vw;
 }
-.koi-supplies-section-two .divider-text p::before {
+.pond-supplies-section-two .divider-text p::before {
     width:0;
 }
 
-.koi-supplies-section-two .divider-text p::after{
+.pond-supplies-section-two .divider-text p::after{
     width: 66vw;
 }
-.koi-supplies-section-three {
+.pond-supplies-section-three {
     background-color: #222222;
     padding: 3vw 3vw 5vw;
     margin: 5vw 7vw 7vw;
 }
 
-.koi-supplies-section-three .subtitle {
+.pond-supplies-section-three .subtitle {
     font-size: 1.86vw;
     margin-bottom:-1.3vw;
 }
 
-.koi-supplies-section-three p {
+.pond-supplies-section-three p {
     line-height: 1.9;
     font-size: 1.1vw;
 }
 
-.koi-supplies-section-three .button.white {
+.pond-supplies-section-three .button.white {
     position: relative;
     left: 1vw;
     top: 1vw;
 }
-.koi-supplies-section-three .button.red {
+.kpond-supplies-section-three .button.red {
     position: relative;
     top: 1vw;
 
@@ -1130,7 +1132,7 @@ ul li {
                         POND SUPPLIES
                 ***************************/
 
-.koi-supplies-section-two .left {
+.pond-supplies-section-two .left {
     padding-left: 6.7vw;
     width: 51vw;
     line-height: 1.9;
@@ -1138,17 +1140,17 @@ ul li {
     margin-top: 5vw;
 
 }
-.koi-supplies-section-two .left img {
+.pond-supplies-section-two .left img {
     width: 15.5vw;
     height: auto;
 }
 
-.koi-supplies-section-two .left .boxes .box {
+.pond-supplies-section-two .left .boxes .box {
     width: 17vw;
     margin-bottom: 3vw;
 }
 
-.koi-supplies-section-two .left .boxes {
+.pond-supplies-section-two .left .boxes {
     display: flex;
     flex-wrap: wrap;
     padding-top: 2vw;
@@ -1185,7 +1187,7 @@ ul li {
     top: 1vw;
 }
 
-.koi-supplies-section-two .right {
+.pond-supplies-section-two .right {
     display: inline-block;
     vertical-align: top;
     width: 31vw;
@@ -1193,20 +1195,20 @@ ul li {
     text-align: right;
 }
 
-.koi-supplies-section-two .right p.green.title {
+.pond-supplies-section-two .right p.green.title {
     color: #D8FF00;
     font-size: 2.8vw;
     padding-top: 5vw;
 }
 
-.koi-supplies-section-two .right:nth-child(3)>p:nth-child(3) {
+.pond-supplies-section-two .right:nth-child(3)>p:nth-child(3) {
     font-size: 1.2vw;
     line-height: 1.2;
     padding-left: 6vw;
     margin-top:0;
 }
 
-.koi-supplies-section-two .right .button.red {
+.pond-supplies-section-two .right .button.red {
     position: relative;
     top:1vw;
 }
@@ -1217,7 +1219,7 @@ ul li {
 
 .sidebar {
     background-color: #222222;
-    padding: 3vw;
+    padding: 3vw 3vw 0;
     width: 25vw;
     text-align: left;
     overflow-x: hidden;
@@ -1225,14 +1227,16 @@ ul li {
 .sidebar a {
     display: block;
     text-decoration: none;
-    font-size: 1.1vw;
-    padding: .5vw 0;
+    font-size: 1vw;
+    padding: .7vw 0;
 }
 
 .sidebar .sidebar-title {
     text-transform: uppercase;
     font-size: 1.3vw;
     padding: 1.8vw 0;
+    color: #fff;
+    font-family: 'Karla';
 }
 
 .sidebar .dropdown-container::after,
@@ -1252,19 +1256,35 @@ ul li {
     padding-bottom: 0;
 }
 
-.sidebar .sidebar-title:last-child::after {
-    display: none;
-}
 
 .sidebar .dropdown {
-    display: none;
-}
-.sidebar .dropdown {
-    margin-left: 4.5vw;
+    transition: ease .7s;
+    margin-left: 1.5vw;
+    margin-top: -.9vw;
 }
 .sidebar .uppercase {
     font-size: 1.28vw;
     padding-top: 1.7vw;
+}
+
+/*hide the inputs/checkmarks and submenu*/
+input,
+ul.dropdown {
+    display: none;
+    list-style-type: none;
+    transition: ease .7s;
+}
+
+/*position the label*/
+label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+/*show the submenu when input is checked*/
+input:checked~ul.dropdown {
+    display: block;
 }
 
 
@@ -1922,7 +1942,7 @@ footer .map iframe {
     height: 27vw;
 }
 footer .top {
-    padding: 5vw 8vw;
+    padding: 5vw 1vw 5vw 8vw;
     position: relative;
 }
 
@@ -1936,8 +1956,9 @@ footer .top .bg-1 {
     height: 20vw;
 }
 footer .top .bg-2 {
-    bottom: 16vw;
     height: 9vw;
+    top:0;
+    right: 4vw;
 }
 
 footer .top a {
@@ -2000,7 +2021,7 @@ footer .col2 a {
 footer .col3 {
     vertical-align: top;
     display: inline-block;
-    width: 15vw;
+    width: 17vw;
 }
 footer .col3 a {
     display: block;
@@ -2010,21 +2031,21 @@ footer .col3 a {
 footer .col4 {
     vertical-align: top;
     display: inline-block;
-    width: 27vw;
+    width: 28vw;
     position: relative;
 }
 
 footer .col4 img {
     display: inline-block;
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
 }
 
 footer .col4 a {
     display: inline-block;
     width: 21vw;
     text-transform: capitalize;
-    padding-left: 2vw;
+    padding-left: 1vw;
 }
 
 footer .col4 .article-link {

@@ -2,6 +2,8 @@
 body {
     margin:0;
     background-color: #000;
+    width: 100vw;
+    overflow-x: hidden;
 }
 nav.mobile-nav {
     display: none;
@@ -279,6 +281,10 @@ nav .green.free-shipping:hover {
 nav .green.free-shipping:hover svg {
     fill: #fff;
 }
+.desktop-nav {
+    position: relative;
+    z-index: 9;
+}
 
 a .green:hover {
     color: #fff;
@@ -304,7 +310,8 @@ a:hover {
     height: 38vw;
     padding: 7vw 7.6vw 2vw;
     margin-top:-6vw;
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .section-one .button.white {
@@ -321,7 +328,8 @@ a:hover {
     position: absolute;
     width: 42vw;
     height: auto;
-    right: 15vw;
+    right: 14vw;
+    top: 4vw;
 }
 
 .section-one h1 {
@@ -494,6 +502,14 @@ a:hover {
     line-height:1.3;
 }
 
+.section-three .koi-image {
+    position: absolute;
+    width: 39vw;
+    height: auto;
+    left: -7vw;
+    bottom: -21vw;
+}
+
 .section-three .left-column .button.red {
     position: relative;
     top:4vw;
@@ -553,14 +569,6 @@ a:hover {
     top: 3vw;
     right: -3vw;
     height: 25vw;
-}
-.section-four .koi-image {
-    z-index: 1;
-    position: absolute;
-    width: 39vw;
-    height: auto;
-    left: 1vw;
-    top: -15vw;
 }
 .section-four .subtitle {
     margin-bottom:0;
@@ -1157,7 +1165,6 @@ a:hover {
 
 footer {
     background-color: #000;
-    position: relative;
     color: #fff;
 }
 
@@ -1212,16 +1219,26 @@ footer .map iframe {
     height: 27vw;
 }
 
-footer .top .bg-1, 
+footer .top {
+    padding: 5vw 1vw 5vw 8vw;
+    position: relative;
+}
+
+footer .top .bg-1,
 footer .top .bg-2 {
     position: absolute;
 }
+
 footer .top .bg-1 {
-    left: 0;
+    left: -2vw;
     bottom: 0;
+    height: 20vw;
 }
+
 footer .top .bg-2 {
-    bottom: 14vw;
+    height: 9vw;
+    top: 0;
+    right: 4vw;
 }
 
 footer .top a {
@@ -1230,12 +1247,14 @@ footer .top a {
     font-family: 'Karla';
     transition: .5s;
 }
+
 footer .top a:hover {
     color: #EF2218;
 }
 
 footer .top .title {
     font-size: 1.8vw;
+    padding-bottom: 2vw;
 }
 
 footer .col1 {
@@ -1244,70 +1263,81 @@ footer .col1 {
     width: 28vw;
     position: relative;
 }
+
 footer .social-links svg {
-    height:1.5vw;
+    height: 1.5vw;
     padding-right: .6vw;
     transition: .5s;
 }
+
 footer .col1 a {
     display: block;
     text-transform: capitalize;
     padding: .5vw 0;
 }
-footer col1 > a:nth-child(4) {
+
+footer col1>a:nth-child(4) {
     color: #EF2218;
 }
-.col1 > a:nth-child(4) > svg:nth-child(1) {
+
+footer .col1>a:nth-child(4)>svg:nth-child(1) {
     height: .8vw;
 }
+
 footer .col1 .social-links a {
     display: inline-block;
     vertical-align: middle;
     padding: .5vw;
-    margin-top:1vw;
+    margin-top: 1vw;
     transition: .5s;
 }
+
 footer .col1 .social-links svg:hover {
     fill: #EF2218;
 }
+
 footer .col2 {
     display: inline-block;
     vertical-align: top;
     width: 13vw;
 }
+
 footer .col2 a {
     display: block;
     padding: .7vw 0;
     text-transform: uppercase;
 }
+
 footer .col3 {
     vertical-align: top;
     display: inline-block;
-    width: 15vw;
+    width: 17vw;
 }
+
 footer .col3 a {
     display: block;
     padding: .7vw 0;
     text-transform: uppercase;
 }
+
 footer .col4 {
     vertical-align: top;
     display: inline-block;
-    width: 27vw;
+    width: 28vw;
     position: relative;
 }
 
 footer .col4 img {
     display: inline-block;
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
 }
 
 footer .col4 a {
     display: inline-block;
     width: 21vw;
     text-transform: capitalize;
-    padding-left: 2vw;
+    padding-left: 1vw;
 }
 
 footer .col4 .article-link {
@@ -1315,30 +1345,75 @@ footer .col4 .article-link {
     padding-bottom: 1vw;
 }
 
-footer .top {
-    padding: 3vw 8vw;
-}
-footer .copyright{
-	padding:1vw 3vw;
-	font-size:.8vw;
-	color:white;
-	position:relative;
+footer .copyright {
+    padding: 1vw 3vw;
+    font-size: .8vw;
+    color: white;
+    position: relative;
     font-family: 'Karla';
     background-color: #222222;
 }
-footer .copyright a{
-	padding:.5vw .2vw;
-	font-size:.8vw;
-	color:white;
-	text-decoration: none;
-    transition: .5s;
+
+footer .copyright a {
+    padding: .5vw .2vw;
+    font-size: .8vw;
+    color: white;
+    text-decoration: none;
 }
 
-footer .copyright a:hover {
-    color: #EF2218;
+footer .copyright span {
+    float: right;
+    margin-right: 3vw;
+    position: relative;
 }
-footer .copyright span{
-	float:right;
-	margin-right:3vw;
-	position:relative;
+                /************************
+                    SCROLL ANIMATIONS
+                ************************/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.fadeIn.active {
+    animation: fadeIn 0.5s ease forwards;
+    -webkit-animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2vw);
+        filter: blur(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.fadeUp {
+    position: relative;
+    opacity: 0;
+    transform: translateY(2vw);
+    filter: blur(10px);
+}
+
+.fadeUp.active {
+    animation: fadeUp 0.5s ease forwards;
+    -webkit-animation: fadeUp 0.5s ease forwards;
 }
